@@ -16,7 +16,7 @@ In this workshop, the AWS account used is:
 ViLamAI2108
 ```
 
-![AWS account ViLamAI2108](/images/5-Workshop/5.2-Prerequisite/account.jpg)
+![AWS account ViLamAI2108](/images/5-Workshop/5.2-Prerequisite/account.png)
 
 ## 2. Deployment Region
 

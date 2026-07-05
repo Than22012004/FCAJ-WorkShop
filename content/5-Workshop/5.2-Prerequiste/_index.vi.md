@@ -16,7 +16,7 @@ Trong workshop này, tài khoản AWS sử dụng là:
 ViLamAI2108
 ```
 
-![Tài khoản AWS ViLamAI2108](/images/5-Workshop/5.2-Prerequisite/account.jpg)
+![Tài khoản AWS ViLamAI2108](/images/5-Workshop/5.2-Prerequisite/account.png)
 
 ## 2. Region triển khai
 
