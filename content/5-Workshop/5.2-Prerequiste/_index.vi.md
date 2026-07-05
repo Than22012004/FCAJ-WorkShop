@@ -32,7 +32,7 @@ Lý do chọn `ap-southeast-1`:
 - Dễ kiểm tra các dịch vụ như Amazon S3, SageMaker, API Gateway, Lambda, Kinesis, SNS, Firehose và CloudWatch.
 - Phù hợp với nhiều tài liệu AWS và ví dụ triển khai.
 
-![Region us-east-1 trên AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/region.png)
+![Region ap-southeast-1 trên AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/region.png)
 
 ## 3. Dịch vụ AWS cần sử dụng
 

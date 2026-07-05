@@ -32,7 +32,7 @@ Reasons for choosing `ap-southeast-1`:
 - It is easy to check services such as Amazon S3, SageMaker, API Gateway, Lambda, Kinesis, SNS, Firehose, and CloudWatch.
 - It is suitable for many AWS documents and deployment examples.
 
-![us-east-1 Region on AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/region.png)
+![ap-southeast-1 Region on AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/region.png)
 
 ## 3. AWS services required
 
