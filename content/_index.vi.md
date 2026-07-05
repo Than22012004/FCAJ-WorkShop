@@ -1,0 +1,37 @@
+﻿---
+title: "Báo cáo thực tập"
+date: 2026-07-04
+weight: 1
+chapter: false
+---
+
+### Thông tin sinh viên:
+&emsp; **Họ và tên:** Phạm Văn Thân
+
+&emsp; **Số điện thoại:** 0334530455
+
+&emsp; **Email:** thanpham2k4@gmail.com
+
+&emsp; **Trường:** Đại học Công nghệ TP HCM
+
+&emsp; **Ngành:** Khoa Học Dữ Liệu
+
+&emsp; **Công ty thực tập:** AWS
+
+&emsp; **Vị trí thực tập:** Cloud Engineering
+
+&emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 12/07/2026
+
+![Ảnh đại diện của bạn](/images/avt.jpg)
+
+
+
+### Nội dung báo cáo
+
+1.  [Worklog](1-Worklog/)
+2.  [Proposal](2-Proposal/)
+3.  [Các bài blogs đã đăng](3-BlogsPosted/)
+4.  [Các events đã tham gia](4-EventParticipated/)
+5.  [Workshop](5-Workshop/)
+6.  [Tự đánh giá](6-Self-evaluation/)
+7.  [Chia sẻ, đóng góp ý kiến](7-Feedback/)
