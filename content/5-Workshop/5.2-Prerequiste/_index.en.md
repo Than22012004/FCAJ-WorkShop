@@ -13,7 +13,7 @@ Before deploying the credit card fraud detection workshop with Machine Learning 
 In this workshop, the AWS account used is:
 
 ```text
-thanpham
+ThanPham
 ```
 
 ![AWS account ViLamAI2108](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/account.png)
