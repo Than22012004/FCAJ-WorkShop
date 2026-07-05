@@ -13,7 +13,7 @@ Before deploying the credit card fraud detection workshop with Machine Learning 
 In this workshop, the AWS account used is:
 
 ```text
-ViLamAI2108
+thanpham
 ```
 
 ![AWS account ViLamAI2108](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/account.png)
@@ -23,10 +23,10 @@ ViLamAI2108
 Region used in the workshop:
 
 ```text
-us-east-1 - N. Virginia
+Asia Pacific(Singapore)
 ```
 
-Reasons for choosing `us-east-1`:
+Reasons for choosing `ap-southeast-1`:
 
 - This is a common region that fully supports the services needed in the workshop.
 - It is easy to check services such as Amazon S3, SageMaker, API Gateway, Lambda, Kinesis, SNS, Firehose, and CloudWatch.
