@@ -6,141 +6,141 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-During my internship and the process of preparing the report in the form of a **Workshop Website**, I had the opportunity to better understand how a cloud project is presented, implemented, and evaluated. Instead of only writing a traditional text report, building a website required me to think more clearly about content structure, implementation flow, and how others could read or follow the project.
+Throughout my internship and the process of developing this workshop website, I had the opportunity to experience not only cloud technologies but also the complete workflow of documenting and presenting a technical project. Preparing the report in the form of a website required me to organize information logically, explain technical concepts clearly, and ensure that readers could easily understand and reproduce the implementation process.
 
-My project is **credit card fraud detection using Machine Learning on AWS**. This topic helped me connect many areas of knowledge: data, Machine Learning, cloud architecture, real-time processing, alerting, logging, and cost optimization.
+The project I developed focuses on **credit card fraud detection using Machine Learning on AWS**. It integrates multiple technologies, including data processing, machine learning, cloud computing, real-time data streaming, monitoring, and cost management. More importantly, it allowed me to understand how these individual components work together to form a complete cloud-based solution.
 
-## 1. Overall evaluation of the program
+## 1. Experience with the Internship Program
 
-I consider the internship program a valuable experience because it did not only require learning AWS theory, but also aimed at building a clearly structured personal project.
+One aspect that impressed me most about the internship program was its emphasis on practical implementation rather than theoretical learning alone. Instead of studying AWS services independently, I was encouraged to combine them into a complete architecture capable of solving a real business problem.
 
-Through the project, I better understood that a real-world cloud solution does not consist of only a single service. For the Fraud Detection problem, the system needs multiple components working together:
+Building the Fraud Detection system required integrating several AWS services, each with a different responsibility within the overall pipeline:
 
-- Amazon S3 to store the dataset, model artifacts, and prediction history.
-- Amazon SageMaker to train and deploy the model.
-- API Gateway and Lambda to receive and process real-time requests.
-- Kinesis to ingest the transaction stream.
-- SNS to send alerts when Fraud is detected.
-- Firehose to store prediction history in S3.
-- CloudWatch to support logging and debugging.
+- Amazon S3 for storing datasets, trained models, and prediction results.
+- Amazon SageMaker for model training and deployment.
+- Amazon API Gateway and AWS Lambda for handling prediction requests.
+- Amazon Kinesis for processing streaming transaction data.
+- Amazon SNS for fraud notifications.
+- Amazon Kinesis Firehose for storing prediction history.
+- Amazon CloudWatch for monitoring logs and system performance.
 
-The most valuable point to me is that the program helped me view the project from an end-to-end perspective, from idea to architecture, from data to deployment, and from deployment to reporting.
+Working with these services helped me understand the importance of designing an end-to-end architecture instead of viewing cloud services as isolated components.
 
-## 2. Learning and working environment
+---
 
-The internship environment gave me the opportunity to practice proactiveness. While working on the Fraud Detection project, there were many concepts I did not fully understand at first, such as IAM Role, SageMaker Endpoint, real-time inference, or how Hugo renders Markdown into a website.
+## 2. Learning Process
 
-Having to self-study, note unclear parts, and gradually add them to the report helped me learn in a more practical way. I did not only read definitions, but also had to ask questions:
+The internship encouraged independent learning and continuous problem solving. Many concepts, such as IAM permissions, SageMaker deployment, real-time inference, and Hugo website generation, were initially unfamiliar to me. Instead of simply following tutorials, I gradually explored documentation, tested different approaches, and documented the knowledge I gained.
 
-- Where does this service fit in the pipeline?
-- What are the input and output of each step?
-- If someone follows the workshop, what do they need to prepare?
-- Which images should be captured to prove the deployment step?
-- Which resources may incur costs and need cleanup?
+Throughout the implementation process, I continuously asked myself questions such as:
 
-These questions helped me understand the nature of the project more clearly instead of merely listing AWS services.
+- How does data move between different AWS services?
+- What is the responsibility of each component?
+- Which deployment steps should be demonstrated with screenshots?
+- Which AWS resources require cleanup after testing?
+- How can the workflow be explained so that another learner can reproduce it?
 
-## 3. Relevance to my major and personal direction
+Answering these questions helped me develop a deeper understanding of the project while improving the overall quality of the report.
 
-The project fits my learning direction because it combines **Machine Learning** and **Cloud Engineering**. Previously, when studying Machine Learning, I often focused on the model, train/test data, and evaluation results. Through this project, I realized that in practice, the model is only one part of the system.
+---
 
-For a model to be used in a real-world system, many other components are needed:
+## 3. Relationship to My Academic Background
 
-- A place to store input data.
-- A way to package the model.
-- An endpoint to serve inference.
-- An API to receive external requests.
-- A real-time processing mechanism.
-- Alerts when abnormalities are detected.
-- Storage for result history for later analysis.
-- Log monitoring and cost control.
+This internship closely matches my academic interests in **Data Science**, **Machine Learning**, and **Cloud Engineering**.
 
-This gave me a more complete view of the lifecycle of an ML system on the cloud.
+Previously, my learning mainly focused on training machine learning models and evaluating prediction accuracy. Through this project, I realized that deploying an ML model into production requires much more than model performance. A practical solution also depends on data storage, deployment infrastructure, APIs, monitoring, security, logging, and operational management.
 
-## 4. What I was most satisfied with
+This broader perspective helped me better understand the complete lifecycle of a machine learning application deployed in a cloud environment.
 
-What I was most satisfied with is that I built my own project direction instead of only modifying content from the sample template. At first, the template contained many parts that did not match my personal project, especially older content about VPC Endpoint and PrivateLink. After reviewing it, I gradually adjusted the website content to better align with the Fraud Detection pipeline.
+---
 
-I am also satisfied that the report was organized into clear sections:
+## 4. Achievements
 
-- Student Information.
-- 12-week Worklog.
-- Proposal.
-- Blog Posts, including Blog 1, Blog 2, and Blog 3 with complete Vietnamese content.
-- Events Participated, updated with two FCAJ Community Day events including main content, lessons learned, and supporting images.
-- Technical Workshop.
-- Self-evaluation.
-- Feedback.
+One achievement that I value most is transforming the original workshop template into a project that reflects my own implementation. Rather than simply following the provided content, I redesigned the workshop around the Fraud Detection pipeline and updated many sections to better match the architecture I actually built.
 
-Working section by section helped me check progress more easily and avoid writing off-topic content.
+The report is organized into several well-defined sections, including:
 
-## 5. Difficulties encountered
+- Personal information
+- Weekly worklog
+- Project proposal
+- Technical blog articles
+- Event participation
+- Workshop implementation
+- Self-evaluation
+- Feedback and future plans
 
-Some main difficulties during the implementation process included:
+This structure made it easier to manage progress while presenting the project in a logical and consistent manner.
 
-### 5.1. Understanding and mapping the technical pipeline correctly
+---
 
-The Fraud Detection pipeline includes many AWS services connected together. If I looked at each service separately, it would be easy to write the report as a list without showing the data flow. Therefore, I needed to divide the system into two parts:
+## 5. Challenges
 
-- **Training Zone:** data, preprocessing, training, model artifact, and SageMaker Endpoint.
-- **Real-time Zone:** API Gateway, Lambda, Kinesis, Lambda Read Features, SageMaker Endpoint, SNS, Firehose, and S3.
+### 5.1 Understanding the Overall Architecture
 
-This division made the report clearer and easier to follow.
+The Fraud Detection system involves multiple AWS services working together. Initially, understanding how these services communicate with one another was challenging. To simplify the explanation, I separated the architecture into two major phases:
 
-### 5.2. Converting Markdown content into a website
+- **Training Pipeline**, covering data preparation, preprocessing, model training, and deployment.
+- **Real-Time Inference Pipeline**, covering transaction ingestion, prediction, alerting, and historical storage.
 
-At first, I did not fully understand how Markdown files in the `content/` folder are rendered by Hugo into a website. After checking with Hugo server, I better understood how the folder structure, `_index.vi.md` files, images in `static/images/`, and `/images/...` paths work.
+This separation made both the implementation and the report easier to understand.
 
-One practical error I encountered was using a Windows-style image path such as:
+### 5.2 Building the Workshop Website
 
-```text
-E:\aws\fcj-workshop-template\static\images\avatar.jpg
-```
+Another challenge was learning how Hugo transforms Markdown content into a complete website. During development, I became familiar with Hugo's folder structure, multilingual content organization, image management, and static resource handling.
 
-The correct path in Markdown should be:
+One mistake I encountered was using local Windows file paths for images instead of Hugo's static resource paths. Correcting this issue improved my understanding of how static assets are served in Hugo websites.
 
-```text
-/images/avatar.jpg
-```
+### 5.3 Selecting Supporting Evidence
 
-This error helped me better understand how Hugo handles static files.
+Choosing appropriate screenshots was also an important part of preparing the report. Instead of documenting every configuration page, I selected screenshots that clearly demonstrate meaningful milestones, such as:
 
-### 5.3. Organizing practical supporting images
+- Amazon S3 bucket structure
+- Data Lake organization
+- SageMaker Endpoint deployment
+- API Gateway configuration
+- Lambda functions
+- Kinesis Data Streams
+- SNS notification emails
+- Resource cleanup after deployment
 
-An initial difficulty was deciding which images were truly necessary for each workshop step. If too many images were inserted, the content would become long and hard to follow; if important steps lacked images, readers would have difficulty imagining the deployment results.
+This approach keeps the report concise while still providing sufficient evidence of implementation.
 
-Therefore, I chose to add images for steps with clear evidential value, such as the S3 bucket, Data Lake structure, SageMaker Endpoint, API Gateway endpoint, Lambda, Kinesis Data Stream, SNS email alert, and SageMaker cleanup step. For steps that only involve checking code or short configuration descriptions, I kept the content in text form to avoid making the report overly lengthy.
+---
 
-## 6. Suggestions and improvement proposals
+## 6. Suggestions
 
-From my personal experience, I have several suggestions:
+Based on my experience, I would suggest several improvements for future internship programs:
 
-- There should be a clearer checklist for each report stage: Proposal, Worklog, Workshop, Self-evaluation, and Feedback.
-- There should be an example showing how to organize images in Hugo, especially the difference between the `static/images/` folder and the `/images/...` path in Markdown.
-- There should be a short guidance session on how to run Hugo locally so students can visually check the website before submission.
-- Students should be encouraged to clearly state the scope that has been implemented, the scope kept at the description level, and the scope that needs further verification, so the report is more transparent and easier to evaluate.
-- For projects using AWS services that may incur costs, such as SageMaker Endpoint or Kinesis, cleanup should be emphasized from the beginning.
+- Provide a clearer reporting guideline with milestones for each required section.
+- Include a short tutorial explaining Hugo project organization, especially image management.
+- Introduce a brief workshop on building and previewing Hugo websites before submission.
+- Encourage students to distinguish between implemented features, conceptual designs, and future work to improve transparency.
+- Place greater emphasis on AWS cost management and resource cleanup throughout the project.
 
-## 7. Would I recommend the program to friends?
+---
 
-I would recommend the program to friends who are interested in AWS, cloud engineering, or want a personal project to include in a report or portfolio.
+## 7. Recommendation
 
-The reason is that the program helps learners not only read documentation, but also build a structured product by themselves. When preparing a report as a workshop website, learners need to think more carefully about objectives, architecture, implementation steps, supporting images, testing, and cleanup.
+I would recommend this internship program to students who are interested in cloud computing, AWS, or machine learning applications.
 
-However, I also think participants need to be prepared for a considerable amount of self-learning, because once they move into a personal project, many parts cannot be followed 100% from the template. This is also the difficult part, but it is the part that helps them learn the most.
+The program provides valuable opportunities to build a complete personal project while developing practical skills in cloud architecture, documentation, and technical presentation. Although self-learning is required throughout the process, overcoming these challenges contributes significantly to professional growth.
 
-## 8. Expectations after the program
+---
 
-After the program, I would like to continue developing the Fraud Detection project in a more practical direction:
+## 8. Future Development
 
-1. Expand end-to-end testing with multiple Fraud/Normal transaction scenarios.
-2. Add a dashboard or summary metrics to monitor prediction results.
-3. Further optimize IAM Role and permission policies according to the principle of least privilege.
-4. Improve system observability with CloudWatch Logs/metrics.
-5. Develop the English version based on the reviewed Vietnamese version.
+In the future, I plan to continue improving the Fraud Detection system by focusing on several areas:
 
-## 9. Conclusion
+- Expanding end-to-end testing with more transaction scenarios.
+- Developing dashboards to monitor prediction results.
+- Strengthening IAM policies following the principle of least privilege.
+- Enhancing monitoring through CloudWatch metrics and logs.
+- Improving documentation and maintaining both Vietnamese and English versions of the workshop website.
 
-Overall, the internship and report-writing process helped me better understand how to turn a Machine Learning idea into a structured cloud system. The Fraud Detection on AWS project helped me practice both technical thinking and the ability to present a workshop so others can read, understand, and implement it again.
+---
 
-The most important lesson I learned is that a good cloud project is not about using many AWS services, but about connecting those services properly to solve the right problem. In this project, the problem is detecting suspicious fraudulent transactions, sending timely alerts, and storing prediction history for later analysis.
+## 9. Final Reflection
+
+Completing this internship has strengthened both my technical knowledge and my ability to communicate technical solutions effectively. Beyond building a machine learning model, I learned how to design a complete cloud architecture, document implementation procedures, and organize technical knowledge in a way that others can easily understand and reproduce.
+
+The most meaningful lesson I gained is that the success of a cloud solution depends not on the number of AWS services it uses, but on how effectively those services are integrated to address a real-world problem. This project has provided me with valuable experience that will support both my future studies and my professional career.

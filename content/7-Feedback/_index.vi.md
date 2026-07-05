@@ -1,146 +1,158 @@
 ﻿---
-title: "Chia sẻ, đóng góp ý kiến"
+title: "Chia sẻ và đóng góp ý kiến"
 date: 2026-04-19
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-Trong quá trình tham gia thực tập và thực hiện báo cáo theo hình thức **Workshop Website**, tôi có cơ hội tiếp cận gần hơn với cách một project cloud được trình bày, triển khai và đánh giá. Thay vì chỉ viết báo cáo dạng văn bản thông thường, việc xây dựng website giúp tôi phải suy nghĩ rõ hơn về cấu trúc nội dung, luồng triển khai và cách người khác có thể đọc lại hoặc làm theo project.
+Trong suốt quá trình thực tập và xây dựng báo cáo dưới hình thức **Workshop Website**, tôi không chỉ có cơ hội tiếp cận các dịch vụ điện toán đám mây của AWS mà còn học được cách trình bày và chia sẻ một dự án kỹ thuật một cách có hệ thống. So với việc viết báo cáo truyền thống, việc xây dựng một website yêu cầu tôi phải tổ chức nội dung hợp lý, diễn giải các bước triển khai rõ ràng và đảm bảo người đọc có thể dễ dàng theo dõi cũng như tái hiện lại quy trình thực hiện.
 
-Project tôi thực hiện là **phát hiện gian lận thẻ tín dụng bằng Machine Learning trên AWS**. Đây là một chủ đề giúp tôi kết nối nhiều mảng kiến thức: dữ liệu, Machine Learning, kiến trúc cloud, realtime processing, alert, logging và tối ưu chi phí.
+Dự án tôi lựa chọn là **hệ thống phát hiện gian lận thẻ tín dụng bằng Machine Learning trên AWS**. Đây là đề tài giúp tôi kết nối nhiều kiến thức đã học như xử lý dữ liệu, Machine Learning, kiến trúc Cloud, xử lý dữ liệu thời gian thực, giám sát hệ thống và tối ưu chi phí vận hành.
 
-## 1. Đánh giá chung về chương trình
+## 1. Cảm nhận về chương trình thực tập
 
-Tôi đánh giá chương trình thực tập là một trải nghiệm hữu ích vì không chỉ yêu cầu tìm hiểu lý thuyết về AWS mà còn hướng đến việc xây dựng một project cá nhân có cấu trúc rõ ràng.
+Điều tôi đánh giá cao nhất ở chương trình thực tập là định hướng học tập thông qua một dự án thực tế. Thay vì chỉ tìm hiểu từng dịch vụ AWS riêng lẻ, tôi được khuyến khích kết hợp nhiều dịch vụ để xây dựng một hệ thống hoàn chỉnh phục vụ cho một bài toán cụ thể.
 
-Thông qua project, tôi hiểu hơn rằng một giải pháp cloud thực tế không chỉ gồm một dịch vụ riêng lẻ. Với bài toán Fraud Detection, hệ thống cần nhiều thành phần phối hợp với nhau:
+Trong dự án Fraud Detection, mỗi dịch vụ AWS đảm nhận một vai trò riêng:
 
-- Amazon S3 để lưu dataset, model artifact và prediction history.
-- Amazon SageMaker để huấn luyện và triển khai model.
-- API Gateway và Lambda để nhận và xử lý request realtime.
-- Kinesis để tiếp nhận luồng giao dịch.
-- SNS để gửi cảnh báo khi phát hiện Fraud.
-- Firehose để lưu lịch sử dự đoán xuống S3.
-- CloudWatch để hỗ trợ logging và debug.
+- **Amazon S3** lưu trữ dữ liệu, mô hình đã huấn luyện và lịch sử dự đoán.
+- **Amazon SageMaker** huấn luyện và triển khai mô hình Machine Learning.
+- **Amazon API Gateway** và **AWS Lambda** tiếp nhận và xử lý các yêu cầu dự đoán theo thời gian thực.
+- **Amazon Kinesis** tiếp nhận luồng giao dịch.
+- **Amazon SNS** gửi cảnh báo khi phát hiện giao dịch nghi ngờ.
+- **Amazon Kinesis Firehose** lưu trữ kết quả dự đoán.
+- **Amazon CloudWatch** theo dõi log và giám sát hoạt động của hệ thống.
 
-Điểm tôi thấy giá trị nhất là chương trình giúp tôi nhìn project theo hướng end-to-end, từ ý tưởng đến kiến trúc, từ dữ liệu đến triển khai và từ triển khai đến báo cáo.
+Quá trình kết hợp các dịch vụ này giúp tôi hiểu rõ hơn cách xây dựng một kiến trúc Cloud hoàn chỉnh thay vì chỉ sử dụng từng dịch vụ một cách độc lập.
 
-## 2. Môi trường học tập và làm việc
+---
 
-Môi trường thực tập giúp tôi có cơ hội rèn luyện tính chủ động. Khi làm project Fraud Detection, có nhiều khái niệm ban đầu tôi chưa nắm chắc như IAM Role, SageMaker Endpoint, realtime inference hoặc cách Hugo render Markdown thành website.
+## 2. Quá trình học tập và làm việc
 
-Việc phải tự tìm hiểu, ghi nhận phần chưa rõ và bổ sung dần vào báo cáo giúp tôi học theo hướng thực tế hơn. Tôi không chỉ đọc khái niệm mà còn phải đặt câu hỏi:
+Trong thời gian thực tập, tôi có cơ hội rèn luyện khả năng tự học và chủ động tìm hiểu tài liệu. Nhiều khái niệm như IAM Role, SageMaker Endpoint, suy luận thời gian thực hay cách Hugo chuyển đổi Markdown thành website ban đầu đều khá mới đối với tôi.
 
-- Dịch vụ này nằm ở đâu trong pipeline?
-- Input và output của mỗi bước là gì?
-- Nếu người khác làm theo workshop, họ cần chuẩn bị gì?
-- Hình ảnh nào cần chụp để chứng minh bước triển khai?
-- Tài nguyên nào có thể phát sinh chi phí và cần clean-up?
+Thay vì chỉ làm theo hướng dẫn có sẵn, tôi chủ động đọc tài liệu, thử nghiệm nhiều cách triển khai khác nhau và ghi chép lại những kiến thức quan trọng để bổ sung vào báo cáo.
 
-Những câu hỏi này giúp tôi hiểu rõ hơn bản chất của project thay vì chỉ liệt kê dịch vụ AWS.
+Trong quá trình thực hiện, tôi luôn đặt ra các câu hỏi như:
 
-## 3. Sự phù hợp với chuyên ngành và định hướng cá nhân
+- Dữ liệu được truyền qua các dịch vụ AWS như thế nào?
+- Vai trò của từng thành phần trong hệ thống là gì?
+- Những bước nào cần minh họa bằng hình ảnh?
+- Những tài nguyên AWS nào cần được dọn dẹp sau khi kiểm thử?
+- Làm thế nào để người khác có thể dễ dàng thực hiện lại dự án?
 
-Project phù hợp với định hướng học tập của tôi vì kết hợp giữa **Machine Learning** và **Cloud Engineering**. Trước đây, khi học Machine Learning, tôi thường tập trung vào phần model, dữ liệu train/test và kết quả đánh giá. Qua project này, tôi nhận ra rằng trong thực tế, model chỉ là một phần của hệ thống.
+Việc tự trả lời những câu hỏi này giúp tôi hiểu sâu hơn về bản chất của hệ thống thay vì chỉ mô tả các dịch vụ AWS.
 
-Để model có thể được sử dụng trong một hệ thống thực tế, cần thêm nhiều thành phần khác:
+---
 
-- Nơi lưu trữ dữ liệu đầu vào.
-- Cách đóng gói model.
-- Endpoint để phục vụ inference.
-- API để nhận request từ bên ngoài.
-- Cơ chế xử lý realtime.
-- Cảnh báo khi phát hiện bất thường.
-- Lưu lịch sử kết quả để phân tích sau.
-- Theo dõi log và kiểm soát chi phí.
+## 3. Mối liên hệ với chuyên ngành
 
-Điều này giúp tôi có cái nhìn đầy đủ hơn về vòng đời của một hệ thống ML trên cloud.
+Dự án có sự gắn kết chặt chẽ với định hướng học tập của tôi trong lĩnh vực **Khoa học dữ liệu (Data Science)**, **Machine Learning** và **Cloud Engineering**.
 
-## 4. Điều hài lòng nhất
+Trước đây, khi học Machine Learning, tôi thường tập trung vào việc xây dựng mô hình, huấn luyện và đánh giá độ chính xác. Tuy nhiên, thông qua dự án này, tôi nhận ra rằng để một mô hình có thể hoạt động trong môi trường thực tế cần rất nhiều thành phần hỗ trợ như lưu trữ dữ liệu, triển khai mô hình, API, giám sát, ghi log, bảo mật và quản lý tài nguyên.
 
-Điều tôi hài lòng nhất là đã xây dựng được một hướng project riêng thay vì chỉ chỉnh sửa nội dung từ template mẫu. Ban đầu, template có nhiều phần chưa khớp với project cá nhân, đặc biệt là các nội dung cũ về VPC Endpoint và PrivateLink. Khi rà soát lại, tôi đã điều chỉnh dần để nội dung website bám đúng hơn vào pipeline Fraud Detection.
+Điều này giúp tôi có cái nhìn toàn diện hơn về vòng đời của một hệ thống Machine Learning khi triển khai trên nền tảng điện toán đám mây.
 
-Tôi cũng hài lòng vì báo cáo được tổ chức theo từng phần rõ ràng:
+---
 
-- Student Information.
-- Worklog 12 tuần.
-- Proposal.
-- Blog Posts đã có Blog 1, Blog 2 và Blog 3 với nội dung hoàn chỉnh ở bản tiếng Việt.
-- Events Participated đã cập nhật hai sự kiện FCAJ Community Day cùng nội dung chính, bài học rút ra và hình ảnh minh chứng.
+## 4. Kết quả đạt được
+
+Điều tôi hài lòng nhất là đã xây dựng được một nội dung mang dấu ấn cá nhân thay vì chỉ sử dụng nguyên mẫu của workshop.
+
+Tôi đã điều chỉnh lại cấu trúc báo cáo để phù hợp với dự án Fraud Detection, đồng thời loại bỏ hoặc thay thế những nội dung không còn phù hợp với mục tiêu của mình.
+
+Báo cáo được tổ chức thành các phần rõ ràng gồm:
+
+- Thông tin sinh viên.
+- Worklog theo từng tuần.
+- Đề xuất dự án.
+- Các bài viết Blog.
+- Các sự kiện đã tham gia.
 - Workshop kỹ thuật.
-- Self-evaluation.
-- Feedback.
+- Tự đánh giá.
+- Chia sẻ và đóng góp ý kiến.
 
-Cách làm từng phần giúp tôi dễ kiểm tra tiến độ và tránh viết lệch hướng.
+Việc chia nhỏ nội dung giúp tôi dễ dàng theo dõi tiến độ thực hiện cũng như đảm bảo báo cáo có bố cục logic và nhất quán.
 
-## 5. Khó khăn gặp phải
+---
 
-Một số khó khăn chính trong quá trình thực hiện gồm:
+## 5. Những khó khăn gặp phải
 
-### 5.1. Hiểu và map đúng pipeline kỹ thuật
+### 5.1. Hiểu và mô tả đúng kiến trúc hệ thống
 
-Pipeline Fraud Detection gồm nhiều dịch vụ AWS liên kết với nhau. Nếu chỉ nhìn từng dịch vụ riêng lẻ, rất dễ viết báo cáo theo kiểu liệt kê mà không thể hiện được luồng dữ liệu. Vì vậy, tôi cần tách hệ thống thành hai phần:
+Một trong những khó khăn lớn nhất là nắm bắt mối liên kết giữa nhiều dịch vụ AWS trong cùng một hệ thống.
 
-- **Training Zone:** dữ liệu, preprocessing, training, model artifact và SageMaker Endpoint.
-- **Real-time Zone:** API Gateway, Lambda, Kinesis, Lambda Read Features, SageMaker Endpoint, SNS, Firehose và S3.
+Để nội dung dễ theo dõi hơn, tôi chia kiến trúc thành hai phần:
 
-Cách chia này giúp báo cáo rõ hơn và dễ theo dõi hơn.
+- **Training Pipeline** gồm chuẩn bị dữ liệu, huấn luyện và triển khai mô hình.
+- **Real-time Inference Pipeline** gồm tiếp nhận giao dịch, dự đoán, gửi cảnh báo và lưu trữ kết quả.
 
-### 5.2. Chuyển nội dung Markdown thành website
+Cách phân chia này giúp việc trình bày kiến trúc trực quan và dễ hiểu hơn.
 
-Ban đầu tôi chưa hiểu rõ việc các file Markdown trong thư mục `content/` sẽ được Hugo render thành website. Sau khi kiểm tra bằng Hugo server, tôi hiểu hơn cách cấu trúc thư mục, file `_index.vi.md`, hình ảnh trong `static/images/` và đường dẫn `/images/...` hoạt động.
+### 5.2. Xây dựng Website bằng Hugo
 
-Một lỗi thực tế gặp phải là dùng đường dẫn ảnh kiểu Windows như:
+Việc tìm hiểu cách Hugo chuyển đổi các tệp Markdown thành website cũng là một thử thách ban đầu.
 
-```text
-E:\aws\fcj-workshop-template\static\images\avatar.jpg
-```
+Thông qua quá trình thực hành, tôi hiểu rõ hơn về cấu trúc thư mục của Hugo, cách quản lý nội dung đa ngôn ngữ, cách tổ chức hình ảnh và sử dụng thư mục `static`.
 
-Cách đúng trong Markdown phải là:
+Một lỗi tôi từng gặp là sử dụng đường dẫn ảnh theo kiểu của Windows thay vì đường dẫn tương đối của Hugo. Sau khi khắc phục, tôi hiểu rõ hơn cách Hugo xử lý các tài nguyên tĩnh khi xây dựng website.
 
-```text
-/images/avatar.jpg
-```
+### 5.3. Lựa chọn hình ảnh minh họa
 
-Lỗi này giúp tôi hiểu rõ hơn cách Hugo xử lý static files.
+Một khó khăn khác là lựa chọn hình ảnh phù hợp cho từng bước triển khai.
 
-### 5.3. Tổ chức hình ảnh minh chứng thực tế
+Nếu sử dụng quá nhiều hình ảnh, báo cáo sẽ trở nên dài và khó theo dõi; ngược lại, nếu thiếu hình ảnh ở những bước quan trọng thì người đọc sẽ khó hình dung quá trình thực hiện.
 
-Một khó khăn ban đầu là xác định ảnh nào thật sự cần thiết cho từng bước trong workshop. Nếu dán quá nhiều ảnh, nội dung sẽ dài và khó theo dõi; nếu thiếu ảnh ở các bước quan trọng, người đọc khó hình dung kết quả triển khai.
+Vì vậy, tôi chỉ bổ sung hình ảnh tại những bước có giá trị minh chứng cao như:
 
-Vì vậy, tôi chọn bổ sung ảnh cho các bước có giá trị minh chứng rõ ràng, chẳng hạn như S3 bucket, cấu trúc Data Lake, SageMaker Endpoint, API Gateway endpoint, Lambda, Kinesis Data Stream, SNS email alert và bước cleanup SageMaker. Với các bước chỉ kiểm tra code hoặc mô tả cấu hình ngắn, tôi giữ nội dung dạng text để tránh làm báo cáo rườm rà.
+- Cấu trúc S3 Bucket.
+- Data Lake.
+- SageMaker Endpoint.
+- API Gateway.
+- Lambda Function.
+- Kinesis Data Stream.
+- Email cảnh báo SNS.
+- Quá trình dọn dẹp tài nguyên sau triển khai.
 
-## 6. Góp ý và đề xuất cải thiện
+---
 
-Từ trải nghiệm cá nhân, tôi có một số đề xuất sau:
+## 6. Một số đề xuất
 
-- Nên có checklist rõ hơn cho từng giai đoạn của báo cáo: Proposal, Worklog, Workshop, Self-evaluation và Feedback.
-- Nên có ví dụ minh họa về cách tổ chức ảnh trong Hugo, đặc biệt là khác biệt giữa thư mục `static/images/` và đường dẫn `/images/...` trong Markdown.
-- Nên có một buổi hướng dẫn ngắn về cách chạy Hugo local để sinh viên kiểm tra trực quan website trước khi nộp.
-- Nên khuyến khích sinh viên ghi rõ phạm vi đã thực hiện, phạm vi giữ ở mức mô tả và phạm vi cần kiểm chứng thêm, để báo cáo minh bạch và dễ đánh giá hơn.
-- Với các project dùng AWS service có chi phí như SageMaker Endpoint hoặc Kinesis, nên nhấn mạnh clean-up ngay từ đầu.
+Từ trải nghiệm của bản thân, tôi có một số đề xuất nhằm nâng cao chất lượng chương trình:
 
-## 7. Có giới thiệu chương trình cho bạn bè không?
+- Cung cấp checklist rõ ràng cho từng phần của báo cáo như Proposal, Worklog, Workshop và Self-evaluation.
+- Bổ sung hướng dẫn chi tiết về cách tổ chức hình ảnh và thư mục trong Hugo.
+- Tổ chức một buổi hướng dẫn ngắn về cách build và kiểm tra website Hugo trước khi nộp.
+- Khuyến khích sinh viên phân biệt rõ những nội dung đã triển khai, những phần mới dừng ở mức thiết kế và những nội dung cần tiếp tục nghiên cứu.
+- Nhấn mạnh hơn về việc tối ưu chi phí và dọn dẹp tài nguyên AWS sau khi hoàn thành dự án.
 
-Tôi sẽ giới thiệu chương trình cho các bạn quan tâm đến AWS, cloud engineering hoặc muốn có một project cá nhân để đưa vào báo cáo/thực hành.
+---
 
-Lý do là chương trình giúp người học không chỉ đọc tài liệu mà còn phải tự xây dựng một sản phẩm có cấu trúc. Khi làm báo cáo theo dạng workshop website, người học phải suy nghĩ kỹ hơn về mục tiêu, kiến trúc, bước triển khai, hình ảnh minh chứng, kiểm thử và clean-up.
+## 7. Đánh giá chung
 
-Tuy nhiên, tôi cũng nghĩ người tham gia cần chuẩn bị tinh thần tự học khá nhiều, vì khi đi vào project cá nhân sẽ có nhiều phần không thể làm theo template 100%. Đây cũng là điểm khó nhưng là phần giúp học được nhiều nhất.
+Tôi sẵn sàng giới thiệu chương trình thực tập này cho các bạn sinh viên quan tâm đến AWS, Cloud Computing hoặc Machine Learning.
 
-## 8. Mong muốn sau chương trình
+Chương trình không chỉ giúp người học tiếp cận công nghệ mà còn tạo cơ hội xây dựng một dự án hoàn chỉnh có thể sử dụng trong báo cáo thực tập hoặc portfolio cá nhân.
 
-Sau chương trình, tôi mong muốn tiếp tục phát triển project Fraud Detection theo hướng thực tế hơn:
+Mặc dù yêu cầu khả năng tự học khá cao, nhưng chính quá trình tự nghiên cứu và giải quyết vấn đề đã giúp tôi tích lũy được nhiều kinh nghiệm thực tế.
 
-1. Mở rộng kiểm thử end-to-end với nhiều kịch bản giao dịch Fraud/Normal.
-2. Bổ sung dashboard hoặc metric tổng hợp để theo dõi kết quả prediction.
-3. Tối ưu thêm IAM Role và chính sách quyền theo nguyên tắc least privilege.
-4. Cải thiện cơ chế quan sát hệ thống bằng CloudWatch Logs/metric.
-5. Phát triển bản tiếng Anh dựa trên bản tiếng Việt đã được rà soát.
+---
+
+## 8. Định hướng phát triển
+
+Sau khi hoàn thành chương trình, tôi mong muốn tiếp tục phát triển hệ thống Fraud Detection theo các hướng sau:
+
+- Mở rộng kiểm thử với nhiều kịch bản giao dịch khác nhau.
+- Xây dựng Dashboard theo dõi kết quả dự đoán.
+- Tối ưu chính sách IAM theo nguyên tắc Least Privilege.
+- Tăng cường khả năng giám sát bằng CloudWatch Metrics và Logs.
+- Tiếp tục hoàn thiện tài liệu và đồng bộ nội dung giữa phiên bản tiếng Việt và tiếng Anh.
+
+---
 
 ## 9. Kết luận
 
-Nhìn chung, quá trình thực tập và làm báo cáo giúp tôi hiểu rõ hơn cách biến một ý tưởng Machine Learning thành một hệ thống cloud có cấu trúc. Project Fraud Detection trên AWS giúp tôi rèn luyện cả tư duy kỹ thuật lẫn cách trình bày một workshop để người khác có thể đọc, hiểu và triển khai lại.
+Quá trình thực tập giúp tôi hiểu rõ hơn cách chuyển đổi một ý tưởng Machine Learning thành một hệ thống Cloud hoàn chỉnh có khả năng triển khai thực tế. Bên cạnh việc nâng cao kiến thức chuyên môn, tôi còn rèn luyện được kỹ năng xây dựng tài liệu kỹ thuật, trình bày quy trình triển khai và chia sẻ kiến thức thông qua một website.
 
-Điểm quan trọng nhất tôi rút ra là: một project cloud tốt không chỉ nằm ở việc dùng nhiều dịch vụ AWS, mà nằm ở việc các dịch vụ đó được kết nối hợp lý để giải quyết đúng bài toán. Với project này, bài toán là phát hiện giao dịch nghi ngờ gian lận, gửi cảnh báo kịp thời và lưu lại lịch sử dự đoán để phục vụ phân tích sau.
+Điều quan trọng nhất tôi học được là giá trị của một dự án Cloud không nằm ở số lượng dịch vụ AWS được sử dụng, mà ở cách kết hợp các dịch vụ đó để giải quyết hiệu quả một bài toán thực tế. Đây sẽ là nền tảng quan trọng để tôi tiếp tục học tập và phát triển trong lĩnh vực Data và Cloud trong tương lai.
