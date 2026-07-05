@@ -76,7 +76,7 @@ Kiến trúc được chia thành hai phần chính:
 - **Training Zone:** lưu trữ dữ liệu, xử lý dữ liệu, huấn luyện mô hình và triển khai model endpoint.
 - **Real-time Zone:** nhận giao dịch, xử lý stream, gọi model để dự đoán, gửi cảnh báo và lưu lịch sử.
 
-![Sơ đồ pipeline Fraud Detection](/images/2-Proposal/fraud_detection_pipeline.jpg)
+![Sơ đồ pipeline Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/2-Proposal/fraud_detection_pipeline.jpg)
 
 ### 5.1. Training Zone
 

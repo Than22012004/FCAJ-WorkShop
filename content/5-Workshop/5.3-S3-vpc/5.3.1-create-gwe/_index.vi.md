@@ -12,7 +12,7 @@ Bước đầu tiên là tạo một S3 bucket để lưu toàn bộ dữ liệu
 
 Truy cập AWS Console, tìm dịch vụ **S3** và mở trang quản lý bucket.
 
-![Amazon S3 Console](/images/5-Workshop/5.3-S3-vpc/S3.jpg)
+![Amazon S3 Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/S3.jpg)
 
 ## 2. Tạo bucket cho project
 
@@ -38,7 +38,7 @@ Cấu hình đề xuất:
 Không public bucket vì dữ liệu giao dịch và model artifact không nên được truy cập công khai.
 {{% /notice %}}
 
-![Tạo S3 bucket cho Fraud Detection](/images/5-Workshop/5.3-S3-vpc/create_bucket.jpg)
+![Tạo S3 bucket cho Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/create_bucket.jpg)
 
 ## 3. Tạo cấu trúc thư mục trong bucket
 
@@ -58,7 +58,7 @@ model.tar.gz
 - `model/`: chứa model artifact và các file liên quan.
 - `model.tar.gz`: file model đã đóng gói để tạo SageMaker Endpoint.
 
-![Cấu trúc S3 bucket sau khi tạo](/images/5-Workshop/5.3-S3-vpc/bucket.jpg)
+![Cấu trúc S3 bucket sau khi tạo](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/bucket.jpg)
 
 ## Kết quả cần đạt
 

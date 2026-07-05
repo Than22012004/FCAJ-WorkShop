@@ -15,7 +15,7 @@ Amazon S3 serves as the workshop's **Data Lake**, used to store:
 - The directory for model artifacts after training.
 - The packaged `model.tar.gz` file used for the SageMaker Endpoint.
 
-![S3 Data Lake overview for Fraud Detection](/images/5-Workshop/5.3-S3-vpc/S3.jpg)
+![S3 Data Lake overview for Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/S3.jpg)
 
 ## Objectives of this section
 

@@ -12,7 +12,7 @@ The first step is to create an S3 bucket to store all data and artifacts for the
 
 Access the AWS Console, search for the **S3** service, and open the bucket management page.
 
-![Amazon S3 Console](/images/5-Workshop/5.3-S3-vpc/S3.jpg)
+![Amazon S3 Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/S3.jpg)
 
 ## 2. Create a bucket for the project
 
@@ -38,7 +38,7 @@ Recommended configuration:
 Do not make the bucket public because transaction data and model artifacts should not be publicly accessible.
 {{% /notice %}}
 
-![Create an S3 bucket for Fraud Detection](/images/5-Workshop/5.3-S3-vpc/create_bucket.jpg)
+![Create an S3 bucket for Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/create_bucket.jpg)
 
 ## 3. Create the folder structure in the bucket
 
@@ -58,7 +58,7 @@ Meaning:
 - `model/`: contains model artifacts and related files.
 - `model.tar.gz`: packaged model file used to create the SageMaker Endpoint.
 
-![S3 bucket structure after creation](/images/5-Workshop/5.3-S3-vpc/bucket.jpg)
+![S3 bucket structure after creation](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/bucket.jpg)
 
 ## Expected result
 

@@ -24,7 +24,7 @@ In the S3 bucket created in the previous step:
 4. Choose **Upload** to upload the file directly to S3.
 5. Wait until the upload status is complete.
 
-![creditcard.csv dataset in the raw folder on Amazon S3](/images/5-Workshop/5.3-S3-vpc/data_in_raw.jpg)
+![creditcard.csv dataset in the raw folder on Amazon S3](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/data_in_raw.jpg)
 
 ## 2. Verify the dataset after upload
 

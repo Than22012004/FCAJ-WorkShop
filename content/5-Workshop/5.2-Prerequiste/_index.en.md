@@ -16,7 +16,7 @@ In this workshop, the AWS account used is:
 ViLamAI2108
 ```
 
-![AWS account ViLamAI2108](/images/5-Workshop/5.2-Prerequisite/account.png)
+![AWS account ViLamAI2108](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/account.png)
 
 ## 2. Deployment Region
 
@@ -32,7 +32,7 @@ Reasons for choosing `us-east-1`:
 - It is easy to check services such as Amazon S3, SageMaker, API Gateway, Lambda, Kinesis, SNS, Firehose, and CloudWatch.
 - It is suitable for many AWS documents and deployment examples.
 
-![us-east-1 Region on AWS Console](/images/5-Workshop/5.2-Prerequisite/region.png)
+![us-east-1 Region on AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/region.png)
 
 ## 3. AWS services required
 
@@ -51,7 +51,7 @@ This workshop uses the following main services:
 | Amazon CloudWatch | Monitors logs and metrics and supports debugging |
 | IAM Role | Manages permissions between services |
 
-![AWS services used in the workshop](/images/5-Workshop/5.2-Prerequisite/service.jpg)
+![AWS services used in the workshop](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/service.jpg)
 
 ## 4. IAM Roles and access permissions
 
@@ -100,7 +100,7 @@ Instead of granting overly broad permissions, the workshop should follow the **l
 | CloudWatch Logs permissions | Writing and viewing logs |
 | IAM PassRole | Allowing services to use the appropriate roles |
 
-![IAM Roles and access permissions on AWS Console](/images/5-Workshop/5.2-Prerequisite/role.jpg)
+![IAM Roles and access permissions on AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/role.jpg)
 
 ## 5. Sample dataset
 
@@ -125,7 +125,7 @@ s3://<bucket-name>/model.tar.gz
 Do not use real credit card data or real sensitive information in the workshop. The dataset should only be used for learning, demo, and reporting purposes.
 {{% /notice %}}
 
-![Sample dataset creditcard.csv](/images/5-Workshop/5.2-Prerequisite/data.jpg)
+![Sample dataset creditcard.csv](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/data.jpg)
 
 ## 6. SNS alert email addresses
 
@@ -140,7 +140,7 @@ thanpham2k4@gmail.com
 
 When creating an SNS subscription, each email needs to confirm the subscription through the email sent by AWS.
 
-![SNS alert email addresses](/images/5-Workshop/5.2-Prerequisite/EmailAlter.jpg)
+![SNS alert email addresses](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/EmailAlter.jpg)
 
 ## 7. What needs to be prepared for Python?
 
@@ -198,4 +198,4 @@ Before starting the workshop, you need to clearly identify resources that may in
 After the demo or workshop is complete, perform the clean-up section to delete the SageMaker Endpoint, Kinesis Stream, Firehose, Lambda, API Gateway, SNS, and other resources that are no longer used.
 {{% /notice %}}
 
-![AWS cost warning](/images/5-Workshop/5.2-Prerequisite/cost.jpg)
+![AWS cost warning](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/cost.jpg)

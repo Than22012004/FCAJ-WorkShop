@@ -32,7 +32,7 @@ Chỉ thao tác với endpoint SageMaker của project Fraud Detection. Không x
 4. Chọn **Delete** để xóa endpoint.
 5. Xác nhận endpoint đã không còn ở trạng thái `InService`.
 
-![SageMaker Endpoint sau khi xóa](/images/5-Workshop/5.6-Cleanup/sagemaker_after_delete.jpg)
+![SageMaker Endpoint sau khi xóa](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.6-Cleanup/sagemaker_after_delete.jpg)
 
 ## Kết quả cần đạt
 

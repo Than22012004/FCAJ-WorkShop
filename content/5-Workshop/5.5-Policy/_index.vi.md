@@ -11,7 +11,7 @@ Phần này xây dựng luồng realtime để nhận giao dịch mới, gọi S
 Luồng realtime chính:
 
 
-![Sơ đồ Realtime Zone cho Fraud Detection](/images/5-Workshop/5.5-Policy/realtime_zone.jpg)
+![Sơ đồ Realtime Zone cho Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/realtime_zone.jpg)
 
 ## Các thành phần cần triển khai
 
@@ -82,20 +82,20 @@ Phần realtime pipeline cần đảm bảo feature mapping trong Lambda Read Fe
 
 ### API Gateway endpoint
 
-![API Gateway endpoint sau khi deploy](/images/5-Workshop/5.5-Policy/API_Gateway_endpoint.jpg)
+![API Gateway endpoint sau khi deploy](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/API_Gateway_endpoint.jpg)
 
 ### Lambda ingest function
 
-![Lambda ingest function](/images/5-Workshop/5.5-Policy/Lambda_ingest_function.jpg)
+![Lambda ingest function](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/Lambda_ingest_function.jpg)
 
 ### Kinesis Data Stream
 
-![Kinesis Data Stream đang hoạt động](/images/5-Workshop/5.5-Policy/Kinesis_Data_Stream.jpg)
+![Kinesis Data Stream đang hoạt động](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/Kinesis_Data_Stream.jpg)
 
 ### Lambda Read Features / CloudWatch Logs
 
-![Lambda Read Features hoặc CloudWatch Logs](/images/5-Workshop/5.5-Policy/Lambda_Read_Features_or_CloudWatch_Logs.jpg)
+![Lambda Read Features hoặc CloudWatch Logs](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/Lambda_Read_Features_or_CloudWatch_Logs.jpg)
 
 ### Email alert từ Amazon SNS
 
-![Email alert khi phát hiện giao dịch Fraud](/images/5-Workshop/5.5-Policy/EmailAlert.jpg)
+![Email alert khi phát hiện giao dịch Fraud](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/EmailAlert.jpg)

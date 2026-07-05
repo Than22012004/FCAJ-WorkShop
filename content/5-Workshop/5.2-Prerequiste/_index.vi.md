@@ -16,7 +16,7 @@ Trong workshop này, tài khoản AWS sử dụng là:
 ViLamAI2108
 ```
 
-![Tài khoản AWS ViLamAI2108](/images/5-Workshop/5.2-Prerequisite/account.png)
+![Tài khoản AWS ViLamAI2108](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/account.png)
 
 ## 2. Region triển khai
 
@@ -32,7 +32,7 @@ Lý do chọn `us-east-1`:
 - Dễ kiểm tra các dịch vụ như Amazon S3, SageMaker, API Gateway, Lambda, Kinesis, SNS, Firehose và CloudWatch.
 - Phù hợp với nhiều tài liệu AWS và ví dụ triển khai.
 
-![Region us-east-1 trên AWS Console](/images/5-Workshop/5.2-Prerequisite/region.png)
+![Region us-east-1 trên AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/region.png)
 
 ## 3. Dịch vụ AWS cần sử dụng
 
@@ -51,7 +51,7 @@ Workshop này sử dụng các dịch vụ chính sau:
 | Amazon CloudWatch | Theo dõi log, metric và hỗ trợ debug |
 | IAM Role | Phân quyền giữa các dịch vụ |
 
-![Các dịch vụ AWS sử dụng trong workshop](/images/5-Workshop/5.2-Prerequisite/service.jpg)
+![Các dịch vụ AWS sử dụng trong workshop](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/service.jpg)
 
 ## 4. IAM Role và quyền truy cập
 
@@ -100,7 +100,7 @@ Thay vì cấp quyền quá rộng, workshop nên định hướng theo nguyên 
 | CloudWatch Logs permissions | Ghi và xem log |
 | IAM PassRole | Cho phép các dịch vụ sử dụng role phù hợp |
 
-![IAM Role và quyền truy cập trên AWS Console](/images/5-Workshop/5.2-Prerequisite/role.jpg)
+![IAM Role và quyền truy cập trên AWS Console](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/role.jpg)
 
 ## 5. Dataset mẫu
 
@@ -125,7 +125,7 @@ s3://<bucket-name>/model.tar.gz
 Không sử dụng dữ liệu thẻ tín dụng thật hoặc thông tin nhạy cảm thật trong workshop. Dataset chỉ nên dùng cho mục đích học tập, demo và báo cáo.
 {{% /notice %}}
 
-![Dataset mẫu creditcard.csv](/images/5-Workshop/5.2-Prerequisite/data.jpg)
+![Dataset mẫu creditcard.csv](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/data.jpg)
 
 ## 6. Email nhận cảnh báo SNS
 
@@ -140,7 +140,7 @@ thanpham2k4@gmail.com
 
 Khi tạo SNS subscription, mỗi email cần xác nhận subscription thông qua email AWS gửi về.
 
-![Email nhận cảnh báo SNS](/images/5-Workshop/5.2-Prerequisite/EmailAlter.jpg)
+![Email nhận cảnh báo SNS](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/EmailAlter.jpg)
 
 ## 7. Python cần chuẩn bị gì?
 
@@ -198,4 +198,4 @@ Trước khi bắt đầu workshop, cần xác định rõ các tài nguyên có
 Sau khi demo hoặc hoàn thành workshop, cần thực hiện phần clean-up để xóa SageMaker Endpoint, Kinesis Stream, Firehose, Lambda, API Gateway, SNS và các tài nguyên không còn sử dụng.
 {{% /notice %}}
 
-![Cảnh báo chi phí AWS](/images/5-Workshop/5.2-Prerequisite/cost.jpg)
+![Cảnh báo chi phí AWS](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.2-Prerequisite/cost.jpg)

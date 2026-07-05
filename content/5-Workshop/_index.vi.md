@@ -80,7 +80,7 @@ Kinesis Firehose
 Amazon S3
 ```
 
-![Sơ đồ pipeline Fraud Detection](/images/2-Proposal/fraud_detection_pipeline.jpg)
+![Sơ đồ pipeline Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/2-Proposal/fraud_detection_pipeline.jpg)
 
 
 

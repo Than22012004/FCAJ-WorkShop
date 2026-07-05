@@ -117,7 +117,7 @@ In this zone:
 6. If the result is `Fraud`, the system sends an alert through SNS to the Admin Email.
 7. The full prediction result is written to S3 through Kinesis Firehose.
 
-![Fraud Detection pipeline diagram](/images/2-Proposal/fraud_detection_pipeline.jpg)
+![Fraud Detection pipeline diagram](https://than22012004.github.io/FCAJ-WorkShop/images/2-Proposal/fraud_detection_pipeline.jpg)
 
 
 

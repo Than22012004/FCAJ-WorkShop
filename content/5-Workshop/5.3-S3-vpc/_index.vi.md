@@ -15,7 +15,7 @@ Amazon S3 đóng vai trò là **Data Lake** của workshop, dùng để lưu:
 - Thư mục lưu model artifact sau khi train.
 - File đóng gói `model.tar.gz` dùng cho SageMaker Endpoint.
 
-![Tổng quan S3 Data Lake cho Fraud Detection](/images/5-Workshop/5.3-S3-vpc/S3.jpg)
+![Tổng quan S3 Data Lake cho Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/S3.jpg)
 
 ## Mục tiêu của phần này
 

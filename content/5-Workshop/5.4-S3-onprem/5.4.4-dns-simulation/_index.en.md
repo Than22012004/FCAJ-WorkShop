@@ -25,7 +25,7 @@ Example transaction request:
 }
 ```
 
-![Sample request sent to SageMaker Endpoint](/images/5-Workshop/5.4-S3-onprem/Request_mau.jpg)
+![Sample request sent to SageMaker Endpoint](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/Request_mau.jpg)
 
 ## Expected response
 
@@ -47,7 +47,7 @@ If the transaction is normal:
 }
 ```
 
-![Sample prediction result from SageMaker Endpoint](/images/5-Workshop/5.4-S3-onprem/predict.jpg)
+![Sample prediction result from SageMaker Endpoint](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/predict.jpg)
 
 ## Expected result
 

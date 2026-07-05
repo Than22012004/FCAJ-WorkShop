@@ -36,7 +36,7 @@ Then upload the `model.tar.gz` file to S3 using the Amazon S3 Console interface,
 s3://<bucket-name>/model.tar.gz
 ```
 
-![model.tar.gz file after packaging the model](/images/5-Workshop/5.4-S3-onprem/pakage_model.jpg)
+![model.tar.gz file after packaging the model](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/pakage_model.jpg)
 
 ## Create the SageMaker Endpoint
 
@@ -48,7 +48,7 @@ The expected result is an endpoint with the status:
 InService
 ```
 
-![SageMaker Endpoint in InService status](/images/5-Workshop/5.4-S3-onprem/sage_maker_endpoint.jpg)
+![SageMaker Endpoint in InService status](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/sage_maker_endpoint.jpg)
 
 {{% notice warning %}}
 An endpoint in the `InService` state can incur costs. Keep the endpoint only for the time needed for the demo/test and delete it after completion.

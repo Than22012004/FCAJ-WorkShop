@@ -25,7 +25,7 @@ Ví dụ request giao dịch:
 }
 ```
 
-![Request mẫu gửi đến SageMaker Endpoint](/images/5-Workshop/5.4-S3-onprem/Request_mau.jpg)
+![Request mẫu gửi đến SageMaker Endpoint](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/Request_mau.jpg)
 
 ## Response kỳ vọng
 
@@ -47,7 +47,7 @@ Nếu giao dịch bình thường:
 }
 ```
 
-![Kết quả dự đoán thử từ SageMaker Endpoint](/images/5-Workshop/5.4-S3-onprem/predict.jpg)
+![Kết quả dự đoán thử từ SageMaker Endpoint](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/predict.jpg)
 
 ## Kết quả cần đạt
 

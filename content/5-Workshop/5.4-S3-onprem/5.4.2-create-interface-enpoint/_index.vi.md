@@ -33,7 +33,7 @@ Trong đó:
 - `model.joblib`: mô hình Random Forest đã train.
 - `scaler.joblib`: scaler dùng để đảm bảo dữ liệu realtime được chuẩn hóa giống lúc training.
 
-![Kết quả train và đánh giá model Random Forest](/images/5-Workshop/5.4-S3-onprem/evaluate.jpg)
+![Kết quả train và đánh giá model Random Forest](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/evaluate.jpg)
 
 {{% notice warning %}}
 Cần đảm bảo feature mapping khi training và feature mapping trong realtime Lambda là nhất quán. Nếu thứ tự hoặc ý nghĩa feature khác nhau, model có thể dự đoán sai.

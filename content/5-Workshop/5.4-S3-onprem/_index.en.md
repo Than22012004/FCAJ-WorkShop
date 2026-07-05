@@ -10,7 +10,7 @@ This section focuses on building a Machine Learning model for the credit card fr
 
 The input data is taken from the Amazon S3 Data Lake in section 5.3. After data processing and model training, the required artifacts are packaged so that SageMaker can serve realtime inference.
 
-![Training Zone diagram for Fraud Detection](/images/5-Workshop/5.4-S3-onprem/training_zone.jpg)
+![Training Zone diagram for Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/training_zone.jpg)
 
 ## Objectives of this section
 

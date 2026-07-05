@@ -36,7 +36,7 @@ Sau đó tải file `model.tar.gz` lên S3 bằng giao diện Amazon S3 Console,
 s3://<bucket-name>/model.tar.gz
 ```
 
-![File model.tar.gz sau khi đóng gói model](/images/5-Workshop/5.4-S3-onprem/pakage_model.jpg)
+![File model.tar.gz sau khi đóng gói model](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/pakage_model.jpg)
 
 ## Tạo SageMaker Endpoint
 
@@ -48,7 +48,7 @@ Kết quả cần có là một endpoint có trạng thái:
 InService
 ```
 
-![SageMaker Endpoint ở trạng thái InService](/images/5-Workshop/5.4-S3-onprem/sage_maker_endpoint.jpg)
+![SageMaker Endpoint ở trạng thái InService](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/sage_maker_endpoint.jpg)
 
 {{% notice warning %}}
 Endpoint ở trạng thái `InService` có thể phát sinh chi phí. Chỉ giữ endpoint trong thời gian cần demo/test và xóa sau khi hoàn thành.

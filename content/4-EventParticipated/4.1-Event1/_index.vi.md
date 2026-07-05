@@ -15,7 +15,7 @@ pre: " <b> 4.1. </b> "
 
 ## 2. Hình ảnh minh chứng
 
-![Minh chứng tham gia FCAJ Community Day - Conference Call](/images/event_1.png)
+![Minh chứng tham gia FCAJ Community Day - Conference Call](https://than22012004.github.io/FCAJ-WorkShop/images/event_1.png)
 
 ## 3. Nội dung chương trình
 

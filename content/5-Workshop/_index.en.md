@@ -80,7 +80,7 @@ Kinesis Firehose
 Amazon S3
 ```
 
-![Fraud Detection pipeline diagram](/images/2-Proposal/fraud_detection_pipeline.jpg)
+![Fraud Detection pipeline diagram](https://than22012004.github.io/FCAJ-WorkShop/images/2-Proposal/fraud_detection_pipeline.jpg)
 
 
 ## AWS services used

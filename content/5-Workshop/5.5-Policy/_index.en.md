@@ -11,7 +11,7 @@ This section builds the realtime flow to receive new transactions, call the Sage
 Main realtime flow:
 
 
-![Realtime Zone diagram for Fraud Detection](/images/5-Workshop/5.5-Policy/realtime_zone.jpg)
+![Realtime Zone diagram for Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/realtime_zone.jpg)
 
 ## Components to deploy
 
@@ -82,20 +82,20 @@ The realtime pipeline must ensure that the feature mapping in Lambda Read Featur
 
 ### API Gateway endpoint
 
-![API Gateway endpoint sau khi deploy](/images/5-Workshop/5.5-Policy/API_Gateway_endpoint.jpg)
+![API Gateway endpoint sau khi deploy](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/API_Gateway_endpoint.jpg)
 
 ### Lambda ingest function
 
-![Lambda ingest function](/images/5-Workshop/5.5-Policy/Lambda_ingest_function.jpg)
+![Lambda ingest function](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/Lambda_ingest_function.jpg)
 
 ### Kinesis Data Stream
 
-![Active Kinesis Data Stream](/images/5-Workshop/5.5-Policy/Kinesis_Data_Stream.jpg)
+![Active Kinesis Data Stream](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/Kinesis_Data_Stream.jpg)
 
 ### Lambda Read Features / CloudWatch Logs
 
-![Lambda Read Features or CloudWatch Logs](/images/5-Workshop/5.5-Policy/Lambda_Read_Features_or_CloudWatch_Logs.jpg)
+![Lambda Read Features or CloudWatch Logs](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/Lambda_Read_Features_or_CloudWatch_Logs.jpg)
 
 ### Email alert from Amazon SNS
 
-![Email alert when a Fraud transaction is detected](/images/5-Workshop/5.5-Policy/EmailAlert.jpg)
+![Email alert when a Fraud transaction is detected](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.5-Policy/EmailAlert.jpg)

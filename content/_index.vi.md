@@ -22,7 +22,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 12/07/2026
 
-![Ảnh đại diện của bạn](/images/avt.jpg)
+![Ảnh đại diện của bạn](https://than22012004.github.io/FCAJ-WorkShop/images/avt.jpg)
 
 
 

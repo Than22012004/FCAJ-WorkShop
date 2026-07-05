@@ -24,7 +24,7 @@ Trong S3 bucket đã tạo ở bước trước:
 4. Chọn **Upload** để tải file trực tiếp lên S3.
 5. Chờ trạng thái upload hoàn tất.
 
-![Dataset creditcard.csv trong thư mục raw trên Amazon S3](/images/5-Workshop/5.3-S3-vpc/data_in_raw.jpg)
+![Dataset creditcard.csv trong thư mục raw trên Amazon S3](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.3-S3-vpc/data_in_raw.jpg)
 
 ## 2. Kiểm tra dataset sau khi upload
 

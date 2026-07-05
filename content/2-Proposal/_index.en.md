@@ -76,7 +76,7 @@ The architecture is divided into two main parts:
 - **Training Zone:** stores data, processes data, trains the model, and deploys the model endpoint.
 - **Real-time Zone:** receives transactions, processes the stream, calls the model for prediction, sends alerts, and stores history.
 
-![Fraud Detection pipeline diagram](/images/2-Proposal/fraud_detection_pipeline.jpg)
+![Fraud Detection pipeline diagram](https://than22012004.github.io/FCAJ-WorkShop/images/2-Proposal/fraud_detection_pipeline.jpg)
 
 ### 5.1. Training Zone
 

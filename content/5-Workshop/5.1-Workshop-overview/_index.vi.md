@@ -117,7 +117,7 @@ Trong vùng này:
 6. Nếu kết quả là `Fraud`, hệ thống gửi cảnh báo qua SNS đến Email Admin.
 7. Toàn bộ prediction result được ghi xuống S3 thông qua Kinesis Firehose.
 
-![Sơ đồ pipeline Fraud Detection](/images/2-Proposal/fraud_detection_pipeline.jpg)
+![Sơ đồ pipeline Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/2-Proposal/fraud_detection_pipeline.jpg)
 
 
 

@@ -32,7 +32,7 @@ Only work with the SageMaker endpoint for the Fraud Detection project. Do not de
 4. Choose **Delete** to delete the endpoint.
 5. Confirm that the endpoint is no longer in the `InService` state.
 
-![SageMaker Endpoint after deletion](/images/5-Workshop/5.6-Cleanup/sagemaker_after_delete.jpg)
+![SageMaker Endpoint after deletion](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.6-Cleanup/sagemaker_after_delete.jpg)
 
 ## Expected result
 

@@ -10,7 +10,7 @@ Phần này tập trung vào quá trình xây dựng mô hình Machine Learning 
 
 Dữ liệu đầu vào được lấy từ Amazon S3 Data Lake ở phần 5.3. Sau khi xử lý dữ liệu và huấn luyện mô hình, các artifact cần thiết sẽ được đóng gói để SageMaker có thể phục vụ realtime inference.
 
-![Sơ đồ Training Zone cho Fraud Detection](/images/5-Workshop/5.4-S3-onprem/training_zone.jpg)
+![Sơ đồ Training Zone cho Fraud Detection](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/training_zone.jpg)
 
 ## Mục tiêu của phần này
 

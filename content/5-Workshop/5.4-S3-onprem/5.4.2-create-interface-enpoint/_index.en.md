@@ -33,7 +33,7 @@ Where:
 - `model.joblib`: the trained Random Forest model.
 - `scaler.joblib`: the scaler used to ensure realtime data is standardized in the same way as during training.
 
-![Random Forest training and evaluation results](/images/5-Workshop/5.4-S3-onprem/evaluate.jpg)
+![Random Forest training and evaluation results](https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/evaluate.jpg)
 
 {{% notice warning %}}
 Ensure that the feature mapping used during training is consistent with the feature mapping in the realtime Lambda. If the order or meaning of features differs, the model may make incorrect predictions.
