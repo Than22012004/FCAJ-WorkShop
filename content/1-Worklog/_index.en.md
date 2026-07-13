@@ -12,26 +12,26 @@ Throughout the implementation, the work was divided into several stages: learnin
 
 ## 12-week overview
 
-**Week 1:** [Getting familiar with AWS, the internship program, and project orientation](1.1-Week1/)
+**Week 1:** [Bootcamp FCAJ, getting familiar with AWS and defining project direction](1.1-Week1/)
 
-**Week 2:** [Researching the fraud detection problem and system requirements](1.2-Week2/)
+**Week 2:** [Researching AWS services, Data Lake architecture and building implementation plan](1.2-Week2/)
 
-**Week 3:** [Designing the overall architecture and Data Lake on Amazon S3](1.3-Week3/)
+**Week 3:** [Collecting, analyzing and preprocessing credit card transaction data](1.3-Week3/)
 
-**Week 4:** [Preprocessing data and building features for the model](1.4-Week4/)
+**Week 4:** [Designing overall system architecture and configuring IAM Roles](1.4-Week4/)
 
-**Week 5:** [Training a Random Forest model for fraud detection](1.5-Week5/)
+**Week 5:** [Training Random Forest model on Amazon SageMaker](1.5-Week5/)
 
-**Week 6:** [Packaging the model and preparing the inference script](1.6-Week6/)
+**Week 6:** [Packaging model, deploying SageMaker Real-time Endpoint](1.6-Week6/)
 
-**Week 7:** [Deploying a SageMaker Real-time Endpoint](1.7-Week7/)
+**Week 7:** [Building REST API with API Gateway and Lambda, integrating Kinesis](1.7-Week7/)
 
-**Week 8:** [Building a transaction intake API with API Gateway and Lambda](1.8-Week8/)
+**Week 8:** [Configuring Kinesis Data Streams, Feature Engineering and calling SageMaker Endpoint](1.8-Week8/)
 
-**Week 9:** [Integrating Kinesis and Lambda for real-time feature processing](1.9-Week9/)
+**Week 9:** [Integrating SageMaker Endpoint with realtime pipeline and testing predictions](1.9-Week9/)
 
-**Week 10:** [Processing prediction results, SNS alerts, and history storage with Firehose](1.10-Week10/)
+**Week 10:** [Configuring SNS alerts, Firehose history storage and complete flow testing](1.10-Week10/)
 
-**Week 11:** [Monitoring, basic security, and cost optimization](1.11-Week11/)
+**Week 11:** [Cost optimization, CloudWatch monitoring and Workshop finalization](1.11-Week11/)
 
-**Week 12:** [End-to-end testing, report finalization, and clean-up](1.12-Week12/)
+**Week 12:** [End-to-End testing, report finalization and demo preparation](1.12-Week12/)

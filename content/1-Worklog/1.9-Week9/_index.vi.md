@@ -1,38 +1,29 @@
-﻿---
+---
 title: "Worklog Tuần 9"
-date: 2026-06-14
+date: 2026-04-19
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-**Thời gian:** 14/06/2026 - 20/06/2026
+**Thời gian:** 15/06 – 21/06
 
 ## Mục tiêu tuần 9
 
-- Tích hợp Amazon Kinesis để xử lý giao dịch theo dạng streaming.
-- Xây dựng Lambda đọc dữ liệu từ Kinesis và thực hiện feature engineering cho realtime inference.
-- Kết nối Lambda với SageMaker Endpoint.
+- Tích hợp SageMaker Endpoint với pipeline xử lý dữ liệu thời gian thực.
+- Phân loại giao dịch hợp lệ và giao dịch gian lận.
+- Kiểm thử và đánh giá độ ổn định của hệ thống.
 
 ## Công việc đã thực hiện
 
-- Tạo Amazon Kinesis Data Stream để tiếp nhận transaction từ Lambda ingest.
-- Cập nhật Lambda đầu vào để đưa giao dịch hợp lệ vào Kinesis.
-- Xây dựng Lambda thứ hai để đọc record từ Kinesis.
-- Trong Lambda xử lý realtime, thực hiện:
-  - Decode dữ liệu từ Kinesis record.
-  - Mapping các trường transaction sang feature model cần.
-  - Chuẩn hóa feature theo format đã dùng khi training.
-  - Gọi SageMaker Endpoint để lấy kết quả dự đoán.
-- Kiểm tra lỗi thường gặp:
-  - Thiếu field trong request.
-  - Sai kiểu dữ liệu.
-  - Sai thứ tự feature.
-  - Lambda chưa có quyền gọi SageMaker Endpoint.
+- Tích hợp SageMaker Endpoint với pipeline xử lý dữ liệu thời gian thực.
+- Phân loại giao dịch hợp lệ và giao dịch gian lận.
+- Kiểm thử khả năng dự đoán liên tục với dữ liệu mô phỏng.
+- Đánh giá độ ổn định của hệ thống và thời gian xử lý từng giao dịch.
 
 ## Kết quả đạt được
 
-- Xây dựng được luồng realtime từ API Gateway đến Kinesis.
-- Lambda có thể đọc transaction từ stream và chuẩn bị feature cho model.
-- Kết nối được Lambda realtime với SageMaker Endpoint.
-- Hoàn thiện phần chính của pipeline dự đoán gian lận theo thời gian thực.
+- SageMaker Endpoint tích hợp thành công với pipeline xử lý dữ liệu thời gian thực.
+- Hệ thống phân loại chính xác giao dịch hợp lệ (prediction = 0) và gian lận (prediction = 1).
+- Kiểm thử dự đoán liên tục với dữ liệu mô phỏng cho kết quả ổn định.
+- Pipeline Kinesis → Lambda → SageMaker hoàn chỉnh, sẵn sàng tích hợp SNS và Firehose.

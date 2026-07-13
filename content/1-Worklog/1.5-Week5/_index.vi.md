@@ -1,38 +1,29 @@
-﻿---
+---
 title: "Worklog Tuần 5"
-date: 2026-05-17
+date: 2026-04-19
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-**Thời gian:** 17/05/2026 - 23/05/2026
+**Thời gian:** 18/05 – 24/05
 
 ## Mục tiêu tuần 5
 
-- Huấn luyện mô hình Machine Learning cho bài toán phát hiện gian lận.
-- Đánh giá mô hình bằng các chỉ số phù hợp.
-- Chọn phiên bản model có thể đóng gói và triển khai lên SageMaker Endpoint.
+- Xây dựng Notebook trên Amazon SageMaker.
+- Huấn luyện mô hình Random Forest và đánh giá hiệu năng.
+- Lựa chọn mô hình tối ưu để triển khai.
 
 ## Công việc đã thực hiện
 
-- Sử dụng dữ liệu đã xử lý từ Amazon S3 để huấn luyện mô hình.
-- Xây dựng mô hình **Random Forest** cho bài toán phân loại giao dịch:
-  - `Fraud`
-  - `Normal`
-- Thực hiện chia dữ liệu train/test để đánh giá mô hình.
-- Theo dõi các chỉ số đánh giá:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-score
-  - Confusion Matrix
-- Chú ý đến vấn đề mất cân bằng dữ liệu giữa giao dịch gian lận và giao dịch bình thường.
-- So sánh kết quả ban đầu và điều chỉnh một số tham số cơ bản của Random Forest.
+- Xây dựng Notebook trên Amazon SageMaker.
+- Huấn luyện mô hình Random Forest bằng Scikit-learn.
+- Tinh chỉnh tham số mô hình và đánh giá hiệu năng thông qua Accuracy, Precision, Recall, F1-score và Confusion Matrix.
+- Lựa chọn mô hình tối ưu để triển khai.
 
 ## Kết quả đạt được
 
-- Huấn luyện được mô hình Random Forest đầu tiên cho fraud detection.
-- Có kết quả đánh giá ban đầu để xác định mô hình có thể sử dụng cho demo workshop.
-- Hiểu rõ hơn trade-off giữa Precision và Recall trong bài toán phát hiện gian lận.
-- Chọn được phiên bản model phù hợp để tiếp tục đóng gói và triển khai.
+- Huấn luyện thành công mô hình Random Forest trên Amazon SageMaker.
+- Đạt kết quả tốt trên tập test: Accuracy >99%, Recall >80%, F1-score >85%.
+- Xác định mô hình phù hợp nhất để triển khai.
+- Lưu mô hình xuống file model.pkl, sẵn sàng đóng gói.

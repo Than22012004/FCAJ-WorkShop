@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Nhật ký công việc"
 date: 2026-04-19
 weight: 1
@@ -12,26 +12,26 @@ Trong quá trình thực hiện, nội dung công việc được chia theo từ
 
 ## Tổng quan 12 tuần
 
-**Tuần 1:** [Làm quen AWS, chương trình thực tập và định hướng project](1.1-Week1/)
+**Tuần 1:** [Tham gia Bootcamp FCAJ, làm quen môi trường AWS và xác định hướng project](1.1-Week1/)
 
-**Tuần 2:** [Nghiên cứu bài toán phát hiện gian lận và yêu cầu hệ thống](1.2-Week2/)
+**Tuần 2:** [Nghiên cứu dịch vụ AWS, kiến trúc Data Lake và xây dựng kế hoạch triển khai](1.2-Week2/)
 
-**Tuần 3:** [Thiết kế kiến trúc tổng thể và Data Lake trên Amazon S3](1.3-Week3/)
+**Tuần 3:** [Thu thập, phân tích và tiền xử lý dữ liệu giao dịch thẻ tín dụng](1.3-Week3/)
 
-**Tuần 4:** [Tiền xử lý dữ liệu và xây dựng feature cho mô hình](1.4-Week4/)
+**Tuần 4:** [Thiết kế kiến trúc tổng thể hệ thống và cấu hình IAM Role](1.4-Week4/)
 
-**Tuần 5:** [Huấn luyện mô hình Random Forest cho fraud detection](1.5-Week5/)
+**Tuần 5:** [Huấn luyện mô hình Random Forest trên Amazon SageMaker](1.5-Week5/)
 
-**Tuần 6:** [Đóng gói model và chuẩn bị inference script](1.6-Week6/)
+**Tuần 6:** [Đóng gói model, triển khai SageMaker Real-time Endpoint](1.6-Week6/)
 
-**Tuần 7:** [Triển khai SageMaker Real-time Endpoint](1.7-Week7/)
+**Tuần 7:** [Xây dựng REST API bằng API Gateway và Lambda, tích hợp Kinesis](1.7-Week7/)
 
-**Tuần 8:** [Xây dựng API nhận giao dịch bằng API Gateway và Lambda](1.8-Week8/)
+**Tuần 8:** [Cấu hình Kinesis Data Streams, Feature Engineering và gọi SageMaker Endpoint](1.8-Week8/)
 
-**Tuần 9:** [Tích hợp Kinesis và Lambda xử lý realtime feature](1.9-Week9/)
+**Tuần 9:** [Tích hợp SageMaker Endpoint với pipeline realtime và kiểm thử dự đoán](1.9-Week9/)
 
-**Tuần 10:** [Xử lý kết quả dự đoán, cảnh báo SNS và lưu lịch sử bằng Firehose](1.10-Week10/)
+**Tuần 10:** [Cấu hình SNS cảnh báo, Firehose lưu lịch sử và kiểm thử luồng hoàn chỉnh](1.10-Week10/)
 
-**Tuần 11:** [Giám sát, bảo mật cơ bản và tối ưu chi phí](1.11-Week11/)
+**Tuần 11:** [Tối ưu chi phí, giám sát CloudWatch và hoàn thiện Workshop](1.11-Week11/)
 
-**Tuần 12:** [Kiểm thử end-to-end, hoàn thiện báo cáo và clean-up](1.12-Week12/)
+**Tuần 12:** [Kiểm thử End-to-End, hoàn thiện báo cáo và chuẩn bị demo](1.12-Week12/)

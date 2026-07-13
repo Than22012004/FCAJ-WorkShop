@@ -1,43 +1,29 @@
-﻿---
+---
 title: "Worklog Tuần 10"
-date: 2026-06-21
+date: 2026-04-19
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-**Thời gian:** 21/06/2026 - 27/06/2026
+**Thời gian:** 22/06 – 28/06
 
 ## Mục tiêu tuần 10
 
-- Xử lý kết quả dự đoán từ SageMaker Endpoint.
-- Gửi cảnh báo khi phát hiện giao dịch gian lận.
-- Lưu lịch sử prediction để phục vụ audit và phân tích sau này.
+- Cấu hình Amazon SNS gửi cảnh báo khi phát hiện giao dịch gian lận.
+- Thiết lập Amazon Kinesis Firehose lưu lịch sử giao dịch.
+- Kiểm thử luồng dữ liệu hoàn chỉnh và khả năng mở rộng.
 
 ## Công việc đã thực hiện
 
-- Chuẩn hóa response trả về từ SageMaker Endpoint, gồm:
-  - `prediction`
-  - `fraud_probability`
-  - `timestamp`
-  - thông tin transaction gốc.
-- Xây dựng logic xử lý kết quả:
-  - Nếu prediction là `Fraud`, gửi cảnh báo.
-  - Nếu prediction là `Normal`, ghi nhận kết quả và không gửi cảnh báo.
-- Tạo Amazon SNS Topic để gửi email cảnh báo cho Admin.
-- Cấu hình email subscription và xác nhận subscription.
-- Tích hợp Lambda realtime với SNS.
-- Tạo Kinesis Firehose để ghi kết quả prediction xuống Amazon S3.
-- Thiết kế dữ liệu lưu lịch sử gồm:
-  - Transaction
-  - Feature
-  - Prediction
-  - Probability
-  - Timestamp
+- Cấu hình Amazon SNS gửi email cảnh báo khi phát hiện giao dịch gian lận.
+- Thiết lập Amazon Kinesis Firehose lưu toàn bộ lịch sử giao dịch vào Amazon S3.
+- Kiểm thử luồng dữ liệu hoàn chỉnh từ API Gateway đến Amazon S3.
+- Kiểm tra cơ chế lưu trữ và khả năng mở rộng của hệ thống.
 
 ## Kết quả đạt được
 
-- Hệ thống có thể gửi cảnh báo khi phát hiện giao dịch nghi ngờ gian lận.
-- Toàn bộ kết quả prediction được lưu xuống Amazon S3 thông qua Kinesis Firehose, gồm Transaction, Feature, Prediction, Timestamp và Probability.
-- Có dữ liệu lịch sử phục vụ audit, monitoring và retraining trong tương lai.
-- Pipeline realtime trở nên hoàn chỉnh hơn từ input, prediction, alert đến lưu trữ.
+- SNS gửi email cảnh báo thành công khi phát hiện giao dịch gian lận.
+- Kinesis Firehose lưu lịch sử giao dịch vào S3 ổn định.
+- Kiểm thử thành công luồng dữ liệu end-to-end: API Gateway → Lambda → Kinesis → SageMaker → SNS/Firehose → S3.
+- Hệ thống realtime fraud detection cơ bản hoàn chỉnh.

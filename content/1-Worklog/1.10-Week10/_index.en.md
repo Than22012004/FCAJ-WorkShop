@@ -1,43 +1,29 @@
 ---
-title: "Week 10 Worklog"
-date: 2026-06-21
+title: "Worklog Week 10"
+date: 2026-04-19
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-**Time:** 21/06/2026 - 27/06/2026
+**Duration:** June 22, 2026 – June 28, 2026
 
-## Week 10 Objectives
+## Week 10 objectives
 
-- Process prediction results from the SageMaker Endpoint.
-- Send alerts when fraudulent transactions are detected.
-- Store prediction history for audit and later analysis.
+- Configure Amazon SNS to send alerts when fraudulent transactions are detected.
+- Set up Amazon Kinesis Firehose to store transaction history.
+- Test the complete data flow and system scalability.
 
 ## Work completed
 
-- Standardized the response returned from the SageMaker Endpoint, including:
-  - `prediction`
-  - `fraud_probability`
-  - `timestamp`
-  - original transaction information.
-- Built result processing logic:
-  - If the prediction is `Fraud`, send an alert.
-  - If the prediction is `Normal`, record the result and do not send an alert.
-- Created an Amazon SNS Topic to send alert emails to the Admin.
-- Configured the email subscription and confirmed the subscription.
-- Integrated the real-time Lambda with SNS.
-- Created Kinesis Firehose to write prediction results to Amazon S3.
-- Designed the stored history data, including:
-  - Transaction
-  - Feature
-  - Prediction
-  - Probability
-  - Timestamp
+- Configured Amazon SNS to send alert emails when fraudulent transactions are detected.
+- Set up Amazon Kinesis Firehose to store all transaction history in Amazon S3.
+- Tested the complete data flow from API Gateway to Amazon S3.
+- Verified the storage mechanism and system scalability.
 
 ## Results achieved
 
-- The system can send alerts when a suspicious fraudulent transaction is detected.
-- All prediction results are stored in Amazon S3 through Kinesis Firehose, including Transaction, Feature, Prediction, Timestamp, and Probability.
-- Historical data is available for audit, monitoring, and future retraining.
-- The real-time pipeline became more complete, from input and prediction to alerting and storage.
+- SNS successfully sent alert emails when fraudulent transactions were detected.
+- Kinesis Firehose stored transaction history in S3 stably.
+- End-to-end testing passed: API Gateway → Lambda → Kinesis → SageMaker → SNS/Firehose → S3.
+- The basic real-time fraud detection system is functionally complete.
