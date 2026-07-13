@@ -15,21 +15,21 @@
     <title>Worklog Tuần 6 :: Báo cáo thực tập</title>
 
     
-    <link href="/FCAJ-WorkShop/css/nucleus.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/fontawesome-all.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/hybrid.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/featherlight.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/perfect-scrollbar.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/auto-complete.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/atom-one-dark-reasonable.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/theme.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/hugo-theme.css?1783253501" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/nucleus.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/fontawesome-all.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/hybrid.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/featherlight.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/perfect-scrollbar.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/auto-complete.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/atom-one-dark-reasonable.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/theme.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/hugo-theme.css?1783932861" rel="stylesheet">
     
-    <link href="/FCAJ-WorkShop/css/theme-workshop.css?1783253501" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/theme-workshop.css?1783932861" rel="stylesheet">
     
     
 
-    <script src="/FCAJ-WorkShop/js/jquery-3.3.1.min.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/jquery-3.3.1.min.js?1783932861"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -175,14 +175,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/FCAJ-WorkShop/js/lunr.min.js?1783253501"></script>
-<script type="text/javascript" src="/FCAJ-WorkShop/js/auto-complete.js?1783253501"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/lunr.min.js?1783932861"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/auto-complete.js?1783932861"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/than22012004.github.io\/FCAJ-WorkShop\/";
     
 </script>
-<script type="text/javascript" src="/FCAJ-WorkShop/js/search.js?1783253501"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/search.js?1783932861"></script>
  
   </div>
 
@@ -797,6 +797,24 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/FCAJ-WorkShop/5-workshop/5.7-demo/"
+  title="Demo dự án"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/FCAJ-WorkShop/5-workshop/5.7-demo/">
+     <b> 5.7. </b> Demo dự án 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -923,7 +941,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>05-07-2026</font>
+        <font color=orange>13-07-2026</font>
     </i>
 </left>
 <left>
@@ -1014,44 +1032,27 @@
 
 
 
-	<p><strong>Thời gian:</strong> 24/05/2026 - 30/05/2026</p>
+	<p><strong>Thời gian:</strong> 25/05 – 31/05</p>
 <h2 id="mục-tiêu-tuần-6">Mục tiêu tuần 6</h2>
 <ul>
-<li>Đóng gói mô hình đã huấn luyện để chuẩn bị triển khai trên Amazon SageMaker.</li>
-<li>Xây dựng inference script để endpoint có thể nhận input và trả kết quả prediction.</li>
-<li>Đảm bảo quá trình xử lý input lúc inference tương thích với dữ liệu lúc training.</li>
+<li>Đóng gói mô hình và viết file inference.py.</li>
+<li>Upload mô hình lên Amazon S3.</li>
+<li>Triển khai SageMaker Real-time Endpoint và kiểm thử.</li>
 </ul>
 <h2 id="công-việc-đã-thực-hiện">Công việc đã thực hiện</h2>
 <ul>
-<li>Lưu các thành phần cần thiết của mô hình:
-<ul>
-<li><code>model.joblib</code></li>
-<li><code>scaler.joblib</code> nếu có sử dụng bước chuẩn hóa dữ liệu.</li>
-<li><code>inference.py</code> để định nghĩa logic inference.</li>
-</ul>
-</li>
-<li>Xây dựng luồng xử lý trong <code>inference.py</code>:
-<ul>
-<li>Load model.</li>
-<li>Nhận request dạng JSON.</li>
-<li>Parse dữ liệu giao dịch.</li>
-<li>Mapping đúng thứ tự feature.</li>
-<li>Thực hiện prediction.</li>
-<li>Trả về kết quả <code>Fraud</code> hoặc <code>Normal</code> cùng xác suất nếu có.</li>
-</ul>
-</li>
-<li>Đóng gói các file thành artifact:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>model.tar.gz
-</span></span></code></pre></div><ul>
-<li>Chuẩn bị artifact để upload lên Amazon S3 và dùng cho SageMaker model deployment.</li>
+<li>Đóng gói mô hình thành file model.tar.gz.</li>
+<li>Viết file inference.py phục vụ suy luận thời gian thực.</li>
+<li>Upload mô hình lên Amazon S3.</li>
+<li>Triển khai mô hình dưới dạng Amazon SageMaker Real-time Endpoint.</li>
+<li>Kiểm thử Endpoint bằng dữ liệu mẫu và đánh giá thời gian phản hồi.</li>
 </ul>
 <h2 id="kết-quả-đạt-được">Kết quả đạt được</h2>
 <ul>
-<li>Hoàn thành bước đóng gói mô hình phục vụ triển khai.</li>
-<li>Có inference script mô tả rõ cách endpoint xử lý request.</li>
-<li>Xác định được format input/output cho SageMaker Endpoint.</li>
-<li>Sẵn sàng triển khai model thành endpoint realtime ở tuần tiếp theo.</li>
+<li>Đóng gói mô hình thành công dưới dạng model.tar.gz.</li>
+<li>Hoàn thành inference.py với đầy đủ hàm model_fn, input_fn, predict_fn, output_fn.</li>
+<li>Upload mô hình lên Amazon S3 và triển khai SageMaker Endpoint thành công.</li>
+<li>Endpoint hoạt động ổn định với thời gian phản hồi đạt yêu cầu cho realtime.</li>
 </ul>
 
 
@@ -1633,6 +1634,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1690,19 +1707,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/FCAJ-WorkShop/js/clipboard.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.jquery.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/jquery.sticky.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/featherlight.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/highlight.pack.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/clipboard.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.jquery.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/jquery.sticky.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/featherlight.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/highlight.pack.js?1783932861"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/FCAJ-WorkShop/js/modernizr.custom-3.6.0.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/learn.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/hugo-learn.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/modernizr.custom-3.6.0.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/learn.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/hugo-learn.js?1783932861"></script>
 
-    <link href="/FCAJ-WorkShop/mermaid/mermaid.css?1783253501" rel="stylesheet" />
-    <script src="/FCAJ-WorkShop/mermaid/mermaid.js?1783253501"></script>
+    <link href="/FCAJ-WorkShop/mermaid/mermaid.css?1783932861" rel="stylesheet" />
+    <script src="/FCAJ-WorkShop/mermaid/mermaid.js?1783932861"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -15,21 +15,21 @@
     <title>Worklog Tuần 11 :: Báo cáo thực tập</title>
 
     
-    <link href="/FCAJ-WorkShop/css/nucleus.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/fontawesome-all.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/hybrid.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/featherlight.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/perfect-scrollbar.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/auto-complete.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/atom-one-dark-reasonable.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/theme.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/hugo-theme.css?1783253501" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/nucleus.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/fontawesome-all.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/hybrid.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/featherlight.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/perfect-scrollbar.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/auto-complete.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/atom-one-dark-reasonable.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/theme.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/hugo-theme.css?1783932861" rel="stylesheet">
     
-    <link href="/FCAJ-WorkShop/css/theme-workshop.css?1783253501" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/theme-workshop.css?1783932861" rel="stylesheet">
     
     
 
-    <script src="/FCAJ-WorkShop/js/jquery-3.3.1.min.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/jquery-3.3.1.min.js?1783932861"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -175,14 +175,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/FCAJ-WorkShop/js/lunr.min.js?1783253501"></script>
-<script type="text/javascript" src="/FCAJ-WorkShop/js/auto-complete.js?1783253501"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/lunr.min.js?1783932861"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/auto-complete.js?1783932861"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/than22012004.github.io\/FCAJ-WorkShop\/";
     
 </script>
-<script type="text/javascript" src="/FCAJ-WorkShop/js/search.js?1783253501"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/search.js?1783932861"></script>
  
   </div>
 
@@ -797,6 +797,24 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/FCAJ-WorkShop/5-workshop/5.7-demo/"
+  title="Demo dự án"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/FCAJ-WorkShop/5-workshop/5.7-demo/">
+     <b> 5.7. </b> Demo dự án 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -923,7 +941,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>05-07-2026</font>
+        <font color=orange>13-07-2026</font>
     </i>
 </left>
 <left>
@@ -1014,58 +1032,26 @@
 
 
 
-	<p><strong>Thời gian:</strong> 28/06/2026 - 04/07/2026</p>
+	<p><strong>Thời gian:</strong> 29/06 – 05/07</p>
 <h2 id="mục-tiêu-tuần-11">Mục tiêu tuần 11</h2>
 <ul>
-<li>Bổ sung giám sát, log và cảnh báo vận hành cho hệ thống.</li>
-<li>Rà soát bảo mật cơ bản theo nguyên tắc least privilege.</li>
-<li>Xem xét các điểm có thể tối ưu chi phí trong quá trình demo và vận hành.</li>
+<li>Tối ưu chi phí sử dụng các dịch vụ AWS.</li>
+<li>Thiết lập Amazon CloudWatch giám sát hệ thống.</li>
+<li>Đánh giá khả năng mở rộng và hoàn thiện Workshop.</li>
 </ul>
 <h2 id="công-việc-đã-thực-hiện">Công việc đã thực hiện</h2>
 <ul>
-<li>Kiểm tra CloudWatch Logs của các Lambda function.</li>
-<li>Theo dõi log khi request đi qua các thành phần:
-<ul>
-<li>API Gateway</li>
-<li>Lambda ingest</li>
-<li>Kinesis</li>
-<li>Lambda feature processing</li>
-<li>SageMaker Endpoint</li>
-<li>SNS</li>
-<li>Firehose</li>
-</ul>
-</li>
-<li>Xác định một số metric cần quan sát:
-<ul>
-<li>Số lượng request API.</li>
-<li>Lỗi Lambda.</li>
-<li>Thời gian xử lý Lambda.</li>
-<li>Lỗi khi gọi SageMaker Endpoint.</li>
-<li>Số lượng record đi qua Kinesis/Firehose.</li>
-</ul>
-</li>
-<li>Rà soát IAM Role cho từng thành phần:
-<ul>
-<li>Lambda chỉ có quyền ghi vào Kinesis nếu cần.</li>
-<li>Lambda realtime chỉ có quyền gọi SageMaker Endpoint, publish SNS và ghi Firehose theo phạm vi cần thiết.</li>
-<li>Không hard-code access key hoặc secret key trong source code.</li>
-</ul>
-</li>
-<li>Ghi nhận các hướng tối ưu chi phí:
-<ul>
-<li>Chỉ bật SageMaker Endpoint khi cần demo.</li>
-<li>Dọn dẹp endpoint sau khi thực hành.</li>
-<li>Sử dụng dữ liệu demo vừa đủ.</li>
-<li>Theo dõi tài nguyên phát sinh chi phí.</li>
-</ul>
-</li>
+<li>Tối ưu chi phí sử dụng các dịch vụ AWS bằng cách dừng Endpoint và Stream khi không sử dụng.</li>
+<li>Thiết lập Amazon CloudWatch để theo dõi hoạt động của Lambda và SageMaker Endpoint.</li>
+<li>Đánh giá khả năng mở rộng, tính sẵn sàng và độ tin cậy của hệ thống.</li>
+<li>Hoàn thiện Workshop và cập nhật tài liệu kỹ thuật của dự án.</li>
 </ul>
 <h2 id="kết-quả-đạt-được">Kết quả đạt được</h2>
 <ul>
-<li>Có kế hoạch giám sát hệ thống bằng CloudWatch Logs và metric.</li>
-<li>Nắm được các điểm cần kiểm tra khi hệ thống realtime gặp lỗi.</li>
-<li>Rà soát được các quyền IAM cơ bản để tránh cấp quyền quá rộng.</li>
-<li>Xác định được các hành động tối ưu chi phí và giảm rủi ro phát sinh chi phí AWS.</li>
+<li>Xác định được các bước tối ưu chi phí: tắt Endpoint và Stream khi không sử dụng.</li>
+<li>CloudWatch giám sát thành công các Lambda function và SageMaker Endpoint.</li>
+<li>Đánh giá hoàn chỉnh khả năng mở rộng, tính sẵn sàng và độ tin cậy của hệ thống.</li>
+<li>Workshop và tài liệu kỹ thuật của dự án được hoàn thiện và cập nhật.</li>
 </ul>
 
 
@@ -1647,6 +1633,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1704,19 +1706,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/FCAJ-WorkShop/js/clipboard.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.jquery.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/jquery.sticky.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/featherlight.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/highlight.pack.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/clipboard.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.jquery.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/jquery.sticky.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/featherlight.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/highlight.pack.js?1783932861"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/FCAJ-WorkShop/js/modernizr.custom-3.6.0.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/learn.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/hugo-learn.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/modernizr.custom-3.6.0.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/learn.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/hugo-learn.js?1783932861"></script>
 
-    <link href="/FCAJ-WorkShop/mermaid/mermaid.css?1783253501" rel="stylesheet" />
-    <script src="/FCAJ-WorkShop/mermaid/mermaid.js?1783253501"></script>
+    <link href="/FCAJ-WorkShop/mermaid/mermaid.css?1783932861" rel="stylesheet" />
+    <script src="/FCAJ-WorkShop/mermaid/mermaid.js?1783932861"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

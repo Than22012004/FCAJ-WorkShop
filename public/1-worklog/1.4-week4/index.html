@@ -15,21 +15,21 @@
     <title>Worklog Tuần 4 :: Báo cáo thực tập</title>
 
     
-    <link href="/FCAJ-WorkShop/css/nucleus.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/fontawesome-all.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/hybrid.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/featherlight.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/perfect-scrollbar.min.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/auto-complete.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/atom-one-dark-reasonable.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/theme.css?1783253501" rel="stylesheet">
-    <link href="/FCAJ-WorkShop/css/hugo-theme.css?1783253501" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/nucleus.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/fontawesome-all.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/hybrid.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/featherlight.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/perfect-scrollbar.min.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/auto-complete.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/atom-one-dark-reasonable.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/theme.css?1783932861" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/hugo-theme.css?1783932861" rel="stylesheet">
     
-    <link href="/FCAJ-WorkShop/css/theme-workshop.css?1783253501" rel="stylesheet">
+    <link href="/FCAJ-WorkShop/css/theme-workshop.css?1783932861" rel="stylesheet">
     
     
 
-    <script src="/FCAJ-WorkShop/js/jquery-3.3.1.min.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/jquery-3.3.1.min.js?1783932861"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -175,14 +175,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/FCAJ-WorkShop/js/lunr.min.js?1783253501"></script>
-<script type="text/javascript" src="/FCAJ-WorkShop/js/auto-complete.js?1783253501"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/lunr.min.js?1783932861"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/auto-complete.js?1783932861"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/than22012004.github.io\/FCAJ-WorkShop\/";
     
 </script>
-<script type="text/javascript" src="/FCAJ-WorkShop/js/search.js?1783253501"></script>
+<script type="text/javascript" src="/FCAJ-WorkShop/js/search.js?1783932861"></script>
  
   </div>
 
@@ -797,6 +797,24 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/FCAJ-WorkShop/5-workshop/5.7-demo/"
+  title="Demo dự án"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="/FCAJ-WorkShop/5-workshop/5.7-demo/">
+     <b> 5.7. </b> Demo dự án 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -923,7 +941,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>05-07-2026</font>
+        <font color=orange>13-07-2026</font>
     </i>
 </left>
 <left>
@@ -1014,52 +1032,26 @@
 
 
 
-	<p><strong>Thời gian:</strong> 10/05/2026 - 16/05/2026</p>
+	<p><strong>Thời gian:</strong> 11/05 – 17/05</p>
 <h2 id="mục-tiêu-tuần-4">Mục tiêu tuần 4</h2>
 <ul>
-<li>Chuẩn bị dữ liệu cho bài toán Machine Learning.</li>
-<li>Thực hiện tiền xử lý dữ liệu và xây dựng feature phục vụ huấn luyện.</li>
-<li>Đảm bảo dữ liệu đầu vào có định dạng nhất quán giữa training và inference.</li>
+<li>Thiết kế kiến trúc tổng thể của hệ thống.</li>
+<li>Thiết kế luồng dữ liệu và cơ chế cảnh báo.</li>
+<li>Chuẩn bị môi trường AWS và cấu hình IAM Role.</li>
 </ul>
 <h2 id="công-việc-đã-thực-hiện">Công việc đã thực hiện</h2>
 <ul>
-<li>Khảo sát các trường dữ liệu có thể dùng cho mô hình fraud detection, ví dụ:
-<ul>
-<li><code>transaction_amount</code></li>
-<li><code>transaction_type</code></li>
-<li><code>merchant_category</code></li>
-<li><code>location</code></li>
-<li><code>device_type</code></li>
-<li><code>transaction_hour</code></li>
-<li><code>user_history_count</code></li>
-<li><code>label</code></li>
-</ul>
-</li>
-<li>Thực hiện các bước tiền xử lý:
-<ul>
-<li>Kiểm tra missing values.</li>
-<li>Chuẩn hóa kiểu dữ liệu.</li>
-<li>Mã hóa biến phân loại nếu cần.</li>
-<li>Chuẩn hóa hoặc scale các trường số.</li>
-<li>Tách dữ liệu train/test.</li>
-</ul>
-</li>
-<li>Xây dựng các feature có ý nghĩa cho bài toán gian lận:
-<ul>
-<li>Thời điểm giao dịch.</li>
-<li>Giá trị giao dịch bất thường.</li>
-<li>Nhóm loại giao dịch.</li>
-<li>Đặc điểm thiết bị hoặc vị trí.</li>
-</ul>
-</li>
-<li>Lưu dữ liệu đã xử lý vào Amazon S3 để SageMaker có thể đọc trong quá trình training.</li>
+<li>Thiết kế kiến trúc tổng thể của hệ thống gồm Training Zone và Real-time Inference Zone.</li>
+<li>Thiết kế luồng dữ liệu từ API Gateway → Lambda → Kinesis → SageMaker Endpoint → Firehose → Amazon S3.</li>
+<li>Thiết kế cơ chế gửi cảnh báo thông qua Amazon SNS khi phát hiện giao dịch gian lận.</li>
+<li>Chuẩn bị môi trường AWS và cấu hình IAM Role cho các dịch vụ.</li>
 </ul>
 <h2 id="kết-quả-đạt-được">Kết quả đạt được</h2>
 <ul>
-<li>Có bộ dữ liệu đã được chuẩn hóa để huấn luyện mô hình.</li>
-<li>Hiểu rõ hơn vai trò của feature engineering trong bài toán fraud detection.</li>
-<li>Xác định được danh sách feature cần giữ nhất quán giữa dữ liệu huấn luyện và bước <strong>Lambda Read Features</strong> khi gọi model ở realtime pipeline.</li>
-<li>Chuẩn bị dữ liệu sẵn sàng cho bước huấn luyện trên Amazon SageMaker.</li>
+<li>Hoàn thành thiết kế kiến trúc tổng thể với hai zone: Training và Real-time Inference.</li>
+<li>Xác định rõ luồng dữ liệu end-to-end từ API Gateway đến Amazon S3.</li>
+<li>Thiết kế xong cơ chế gửi cảnh báo qua Amazon SNS.</li>
+<li>Môi trường AWS và IAM Role đã được cấu hình, sẵn sàng triển khai.</li>
 </ul>
 
 
@@ -1641,6 +1633,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1698,19 +1706,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/FCAJ-WorkShop/js/clipboard.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.jquery.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/jquery.sticky.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/featherlight.min.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/highlight.pack.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/clipboard.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/perfect-scrollbar.jquery.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/jquery.sticky.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/featherlight.min.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/highlight.pack.js?1783932861"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/FCAJ-WorkShop/js/modernizr.custom-3.6.0.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/learn.js?1783253501"></script>
-    <script src="/FCAJ-WorkShop/js/hugo-learn.js?1783253501"></script>
+    <script src="/FCAJ-WorkShop/js/modernizr.custom-3.6.0.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/learn.js?1783932861"></script>
+    <script src="/FCAJ-WorkShop/js/hugo-learn.js?1783932861"></script>
 
-    <link href="/FCAJ-WorkShop/mermaid/mermaid.css?1783253501" rel="stylesheet" />
-    <script src="/FCAJ-WorkShop/mermaid/mermaid.js?1783253501"></script>
+    <link href="/FCAJ-WorkShop/mermaid/mermaid.css?1783932861" rel="stylesheet" />
+    <script src="/FCAJ-WorkShop/mermaid/mermaid.js?1783932861"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
