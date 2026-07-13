@@ -99,10 +99,6 @@ Amazon S3
 | Amazon CloudWatch | Theo dõi log, metric và hỗ trợ debug |
 | IAM Role | Phân quyền giữa các dịch vụ theo nguyên tắc least privilege |
 
-## Kết quả dự án
-
-🎬 **Video demo và tài liệu dự án:** [Xem trên Google Drive](https://drive.google.com/drive/folders/1Mydp5s4D15_Sg0I6-p3yaHmpIsbRHUJk?usp=sharing)
-
 ## Nội dung workshop
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
@@ -111,6 +107,7 @@ Amazon S3
 4. [Huấn luyện mô hình và triển khai SageMaker Endpoint](5.4-S3-onprem/)
 5. [Xây dựng realtime pipeline, alert và lưu lịch sử](5.5-Policy/)
 6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+7. [Demo dự án](5.7-Demo/)
 
 {{% notice warning %}}
 SageMaker Real-time Endpoint, Kinesis Data Streams và một số dịch vụ AWS khác có thể phát sinh chi phí nếu để chạy lâu. Luôn thực hiện phần clean-up sau khi hoàn thành workshop.

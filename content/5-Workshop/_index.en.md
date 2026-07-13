@@ -98,10 +98,6 @@ Amazon S3
 | Amazon CloudWatch | Monitors logs and metrics and supports debugging |
 | IAM Role | Manages permissions between services according to the least privilege principle |
 
-## Project Results
-
-🎬 **Demo video and project documents:** [View on Google Drive](https://drive.google.com/drive/folders/1Mydp5s4D15_Sg0I6-p3yaHmpIsbRHUJk?usp=sharing)
-
 ## Workshop content
 
 1. [Workshop overview](5.1-Workshop-overview/)
@@ -110,6 +106,7 @@ Amazon S3
 4. [Train the model and deploy the SageMaker Endpoint](5.4-S3-onprem/)
 5. [Build the realtime pipeline, alerts, and history storage](5.5-Policy/)
 6. [Clean up resources](5.6-Cleanup/)
+7. [Project Demo](5.7-Demo/)
 
 {{% notice warning %}}
 SageMaker Real-time Endpoint, Kinesis Data Streams, and some other AWS services may incur costs if left running for a long time. Always complete the clean-up section after finishing the workshop.
