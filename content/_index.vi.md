@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Báo cáo thực tập"
 date: 2026-07-04
 weight: 1

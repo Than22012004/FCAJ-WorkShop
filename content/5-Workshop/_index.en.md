@@ -98,6 +98,10 @@ Amazon S3
 | Amazon CloudWatch | Monitors logs and metrics and supports debugging |
 | IAM Role | Manages permissions between services according to the least privilege principle |
 
+## Project Results
+
+🎬 **Demo video and project documents:** [View on Google Drive](https://drive.google.com/drive/folders/1Mydp5s4D15_Sg0I6-p3yaHmpIsbRHUJk?usp=sharing)
+
 ## Workshop content
 
 1. [Workshop overview](5.1-Workshop-overview/)

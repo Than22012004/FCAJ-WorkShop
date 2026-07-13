@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Workshop"
 date: 2026-04-19
 weight: 5
@@ -98,6 +98,10 @@ Amazon S3
 | Amazon SNS | Gửi email cảnh báo cho Admin khi phát hiện Fraud |
 | Amazon CloudWatch | Theo dõi log, metric và hỗ trợ debug |
 | IAM Role | Phân quyền giữa các dịch vụ theo nguyên tắc least privilege |
+
+## Kết quả dự án
+
+🎬 **Video demo và tài liệu dự án:** [Xem trên Google Drive](https://drive.google.com/drive/folders/1Mydp5s4D15_Sg0I6-p3yaHmpIsbRHUJk?usp=sharing)
 
 ## Nội dung workshop
 
