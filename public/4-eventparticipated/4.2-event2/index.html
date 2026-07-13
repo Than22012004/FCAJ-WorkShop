@@ -12,7 +12,7 @@
 
     <link rel="icon" href="/FCAJ-WorkShop/images/favicon.png" type="image/png">
 
-    <title>Huấn luyện mô hình và triển khai SageMaker Endpoint :: Báo cáo thực tập</title>
+    <title>Sự kiện 2 - Các giải pháp bảo mật và chứng chỉ AWS :: Báo cáo thực tập</title>
 
     
     <link href="/FCAJ-WorkShop/css/nucleus.css?1783933355" rel="stylesheet">
@@ -141,7 +141,7 @@
   
   
     
-      <a href="https://than22012004.github.io/FCAJ-WorkShop/en/5-workshop/5.4-s3-onprem/" class="lang-toggle-btn pulse" title="Switch to English">
+      <a href="https://than22012004.github.io/FCAJ-WorkShop/en/4-eventparticipated/4.2-event2/" class="lang-toggle-btn pulse" title="Switch to English">
         <span class="lang-icon">🌐</span>
         
           <span class="lang-current">VI</span>
@@ -156,7 +156,7 @@
 </div>
 
   </head>
-  <body class="" data-url="/FCAJ-WorkShop/5-workshop/5.4-s3-onprem/">
+  <body class="" data-url="/FCAJ-WorkShop/4-eventparticipated/4.2-event2/">
     <nav
   id="sidebar"
   class="showVisitedLinks"
@@ -522,7 +522,7 @@
   data-nav-id="/FCAJ-WorkShop/4-eventparticipated/"
   title="Các events đã tham gia"
   class="dd-item 
-        
+        parent
         
         
         "
@@ -559,7 +559,7 @@
   title="Sự kiện 2 - Các giải pháp bảo mật và chứng chỉ AWS"
   class="dd-item 
         
-        
+        active
         
         "
 >
@@ -579,7 +579,7 @@
   data-nav-id="/FCAJ-WorkShop/5-workshop/"
   title="Workshop"
   class="dd-item 
-        parent
+        
         
         
         "
@@ -692,7 +692,7 @@
   title="Huấn luyện mô hình và triển khai SageMaker Endpoint"
   class="dd-item 
         
-        active
+        
         
         "
 >
@@ -908,14 +908,14 @@
                        
                 <option
                   id="en"
-                  value="https://than22012004.github.io/FCAJ-WorkShop/en/5-workshop/5.4-s3-onprem/"
+                  value="https://than22012004.github.io/FCAJ-WorkShop/en/4-eventparticipated/4.2-event2/"
                 >
                   English
                 </option>
                             
                 <option
                   id="vi"
-                  value="https://than22012004.github.io/FCAJ-WorkShop/5-workshop/5.4-s3-onprem/"
+                  value="https://than22012004.github.io/FCAJ-WorkShop/4-eventparticipated/4.2-event2/"
                   selected
                 >
                   Tiếng Việt
@@ -1009,7 +1009,7 @@
             
           
           
-            <a href='/FCAJ-WorkShop/'>Báo cáo thực tập</a> > <a href='/FCAJ-WorkShop/5-workshop/'>Workshop</a> > Huấn luyện mô hình và triển khai SageMaker Endpoint
+            <a href='/FCAJ-WorkShop/'>Báo cáo thực tập</a> > <a href='/FCAJ-WorkShop/4-eventparticipated/'>Các events đã tham gia</a> > Sự kiện 2 - Các giải pháp bảo mật và chứng chỉ AWS
           
         
           
@@ -1023,8 +1023,17 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#mục-tiêu-của-phần-này">Mục tiêu của phần này</a></li>
-    <li><a href="#nội-dung-thực-hiện">Nội dung thực hiện</a></li>
+    <li><a href="#1-thông-tin-sự-kiện">1. Thông tin sự kiện</a></li>
+    <li><a href="#2-hình-ảnh-minh-chứng">2. Hình ảnh minh chứng</a></li>
+    <li><a href="#3-nội-dung-chương-trình">3. Nội dung chương trình</a>
+      <ul>
+        <li><a href="#0900---1000-aws-security-agent">09:00 - 10:00: AWS Security Agent</a></li>
+        <li><a href="#1000---1045-giới-thiệu-về-sla-service-level-agreement">10:00 - 10:45: Giới thiệu về SLA (Service Level Agreement)</a></li>
+        <li><a href="#1045---1100-nghỉ-giải-lao">10:45 - 11:00: Nghỉ giải lao</a></li>
+        <li><a href="#1100---1200-hướng-dẫn-cách-ôn-thi-các-chứng-chỉ-của-aws">11:00 - 12:00: Hướng dẫn cách ôn thi các chứng chỉ của AWS</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-kết-quả-đạt-được-và-bài-học-kinh-nghiệm">4. Kết quả đạt được và bài học kinh nghiệm</a></li>
   </ul>
 </nav></div>
 </div>
@@ -1041,7 +1050,7 @@
           
             <h1>
               
-              Huấn luyện mô hình và triển khai SageMaker Endpoint
+              Sự kiện 2 - Các giải pháp bảo mật và chứng chỉ AWS
             </h1>
           
 
@@ -1049,36 +1058,30 @@
 
 
 
-	<p>Phần này tập trung vào quá trình xây dựng mô hình Machine Learning cho bài toán phát hiện gian lận thẻ tín dụng và triển khai model thành <strong>SageMaker Real-time Endpoint</strong>.</p>
-<p>Dữ liệu đầu vào được lấy từ Amazon S3 Data Lake ở phần 5.3. Sau khi xử lý dữ liệu và huấn luyện mô hình, các artifact cần thiết sẽ được đóng gói để SageMaker có thể phục vụ realtime inference.</p>
-<p><img src="https://than22012004.github.io/FCAJ-WorkShop/images/5-Workshop/5.4-S3-onprem/training_zone.jpg" alt="Sơ đồ Training Zone cho Fraud Detection"></p>
-<h2 id="mục-tiêu-của-phần-này">Mục tiêu của phần này</h2>
-<p>Sau khi hoàn thành phần 5.4, cần đạt được các kết quả sau:</p>
+	<h2 id="1-thông-tin-sự-kiện">1. Thông tin sự kiện</h2>
 <ul>
-<li>Đọc dataset từ Amazon S3.</li>
-<li>Thực hiện preprocessing và feature engineering.</li>
-<li>Huấn luyện mô hình Random Forest cho bài toán Fraud/Normal.</li>
-<li>Lưu model thành <code>model.joblib</code> và scaler thành <code>scaler.joblib</code>.</li>
-<li>Chuẩn bị file <code>inference.py</code> để SageMaker Endpoint xử lý request realtime.</li>
-<li>Đóng gói model thành <code>model.tar.gz</code>.</li>
-<li>Deploy model thành SageMaker Real-time Endpoint.</li>
+<li><strong>Tên sự kiện:</strong> AWS Security &amp; Certification Workshop</li>
+<li><strong>Thời gian:</strong> Thứ Bảy, ngày 15 tháng 6</li>
+<li><strong>Địa điểm:</strong> Văn phòng AWS Việt Nam</li>
+<li><strong>Vai trò tham gia:</strong> Khách mời</li>
 </ul>
-<h2 id="nội-dung-thực-hiện">Nội dung thực hiện</h2>
-<ol>
-<li><a href="/FCAJ-WorkShop/5-workshop/5.4-s3-onprem/5.4.1-prepare/">Chuẩn bị môi trường train model</a></li>
-<li><a href="/FCAJ-WorkShop/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">Train model và lưu artifact</a></li>
-<li><a href="/FCAJ-WorkShop/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">Đóng gói model và tạo SageMaker Endpoint</a></li>
-<li><a href="/FCAJ-WorkShop/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">Kiểm tra endpoint bằng request mẫu</a></li>
-</ol>
-
-<div
-  class="notices warning"
-  
->
-  <p>SageMaker Real-time Endpoint có thể phát sinh chi phí khi endpoint còn chạy. Sau khi demo xong cần xóa endpoint trong phần clean-up.</p>
-
-</div>
-
+<h2 id="2-hình-ảnh-minh-chứng">2. Hình ảnh minh chứng</h2>
+<p><img src="https://than22012004.github.io/FCAJ-WorkShop/images/event_2.jpj" alt="Minh chứng tham gia Sự kiện 2"></p>
+<h2 id="3-nội-dung-chương-trình">3. Nội dung chương trình</h2>
+<p>Sự kiện tập trung vào các chủ đề quan trọng khi vận hành hệ thống thực tế trên nền tảng đám mây, bao gồm bảo mật, cam kết chất lượng dịch vụ và định hướng nghề nghiệp thông qua các chứng chỉ của AWS.</p>
+<h3 id="0900---1000-aws-security-agent">09:00 - 10:00: AWS Security Agent</h3>
+<p>Phiên mở đầu giới thiệu về <strong>AWS Security Agent</strong> và các phương pháp tiếp cận bảo mật toàn diện trên đám mây. Diễn giả trình bày cách các tác tử bảo mật có thể tự động giám sát, phát hiện các mối đe dọa tiềm ẩn và phản ứng theo thời gian thực. Nội dung cũng đi sâu vào cách thiết lập các Guardrails, nguyên tắc đặc quyền tối thiểu (Least Privilege) và việc tích hợp các quy trình bảo mật (DevSecOps) vào vòng đời phát triển phần mềm mà không làm chậm tốc độ triển khai.</p>
+<h3 id="1000---1045-giới-thiệu-về-sla-service-level-agreement">10:00 - 10:45: Giới thiệu về SLA (Service Level Agreement)</h3>
+<p>Phiên thứ hai tập trung vào khái niệm <strong>SLA (Service Level Agreement)</strong> - Cam kết chất lượng dịch vụ. Người tham gia được tìm hiểu cách đọc, phân tích các tài liệu SLA của AWS cho từng dịch vụ cụ thể (như Amazon S3, EC2, API Gateway). Diễn giả giải thích các khái niệm như Uptime (Thời gian hoạt động), RTO (Recovery Time Objective), RPO (Recovery Point Objective) và cách kiến trúc hệ thống để đáp ứng được các mức SLA cao (như 99.99% hoặc 99.999%) thông qua Multi-AZ và Multi-Region.</p>
+<h3 id="1045---1100-nghỉ-giải-lao">10:45 - 11:00: Nghỉ giải lao</h3>
+<p>Giao lưu, networking và thảo luận với các chuyên gia bảo mật.</p>
+<h3 id="1100---1200-hướng-dẫn-cách-ôn-thi-các-chứng-chỉ-của-aws">11:00 - 12:00: Hướng dẫn cách ôn thi các chứng chỉ của AWS</h3>
+<p>Phiên cuối cùng rất thiết thực đối với những người mới bắt đầu và đang định hướng nghề nghiệp trên Cloud. Diễn giả chia sẻ lộ trình lấy các chứng chỉ của AWS (từ Cloud Practitioner, Associate, Professional đến Specialty). Nội dung bao gồm cách đăng ký thi, các nguồn tài liệu học tập chính thức và miễn phí (như AWS Skill Builder), chiến thuật làm bài thi, và cách lấy kinh nghiệm thực hành (hands-on) thông qua việc tự xây dựng các dự án (như Data Lake hoặc Fraud Detection).</p>
+<h2 id="4-kết-quả-đạt-được-và-bài-học-kinh-nghiệm">4. Kết quả đạt được và bài học kinh nghiệm</h2>
+<p>Tham gia sự kiện thứ 2 mang lại cho tôi cái nhìn tổng quan và thực tế hơn về việc thiết kế một hệ thống không chỉ hoạt động được mà còn phải bảo mật và có độ sẵn sàng cao.</p>
+<p>Kiến thức về <strong>AWS Security Agent</strong> giúp tôi hiểu rõ tầm quan trọng của việc bảo mật hệ thống. Trong dự án phát hiện gian lận của mình, việc quản lý quyền truy cập bằng IAM Role cho các dịch vụ (Lambda, API Gateway, SageMaker) cần được thiết lập cẩn thận theo nguyên tắc đặc quyền tối thiểu, đồng thời việc theo dõi logs từ CloudWatch cũng đóng vai trò giống như một lớp giám sát bảo mật.</p>
+<p>Phần giới thiệu về <strong>SLA</strong> giúp tôi nâng cao tư duy kiến trúc. Khi thiết kế pipeline thời gian thực với Kinesis và SageMaker, tôi phải bắt đầu cân nhắc việc các dịch vụ này cam kết Uptime như thế nào, và hệ thống của tôi sẽ xử lý ra sao nếu một thành phần tạm thời không phản hồi.</p>
+<p>Cuối cùng, phần chia sẻ về <strong>chứng chỉ AWS</strong> đã tiếp thêm động lực và định hướng lộ trình học tập rõ ràng. Nó chứng minh rằng những dự án thực tế như hệ thống Real-time ML on AWS mà tôi đang xây dựng là bước đệm tốt nhất để hiểu sâu về dịch vụ, hỗ trợ rất nhiều cho việc đạt được các chứng chỉ uy tín của AWS trong tương lai.</p>
 
 
 
@@ -1414,6 +1417,111 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -1464,7 +1572,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1479,110 +1586,6 @@
             
             
                 
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1738,10 +1741,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/FCAJ-WorkShop/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/" title="Tải dataset lên S3 bằng AWS Console và kiểm tra dữ liệu"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/FCAJ-WorkShop/4-eventparticipated/4.1-event1/" title="Sự kiện 1 - FCAJ Community Day - Conference Call"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/FCAJ-WorkShop/5-workshop/5.4-s3-onprem/5.4.1-prepare/" title="Chuẩn bị môi trường train model" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/FCAJ-WorkShop/5-workshop/" title="Workshop" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

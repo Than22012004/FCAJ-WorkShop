@@ -17,3 +17,9 @@ Phần này tổng hợp các sự kiện FCAJ Community Day mà tôi đã tham 
 - **Vai trò:** Guest
 - **Nội dung nổi bật:** AI context, LotusHacks/UTMorpho, Amazon CloudFront, Amazon Quick, tính không deterministic của LLM và enterprise-grade multi-agent system.
 
+### [Event 2 - Các giải pháp bảo mật và chứng chỉ AWS](4.2-Event2/)
+
+- **Thời gian:** Thứ Bảy, 15 tháng 6
+- **Địa điểm:** Văn phòng AWS Việt Nam
+- **Vai trò:** Khách mời
+- **Nội dung nổi bật:** AWS Security Agent, SLA (Service Level Agreement), Hướng dẫn ôn thi các chứng chỉ của AWS.

@@ -17,3 +17,9 @@ This section summarizes the FCAJ Community Day events I participated in during m
 - **Role:** Guest
 - **Highlights:** AI context, LotusHacks/UTMorpho, Amazon CloudFront, Amazon Quick, non-determinism of LLMs, and enterprise-grade multi-agent system.
 
+### [Event 2 - AWS Security and Certification](4.2-Event2/)
+
+- **Time:** Saturday 15 June
+- **Location:** AWS Vietnam Office
+- **Role:** Guest
+- **Highlights:** AWS Security Agent, SLA (Service Level Agreement), Guide to taking AWS Certification exams.
